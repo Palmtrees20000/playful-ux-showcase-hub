@@ -22,7 +22,7 @@ const Index = () => {
       description: "A 6-week summer sprint improving user engagement through redesigned workflows and testing.",
       image: "/placeholder.svg",
       tags: ["UX Design", "User Research", "Figma", "Wireframing"],
-      link: "#",
+      link: "https://example.com/awardco-case-study",
       featured: true
     },
     {

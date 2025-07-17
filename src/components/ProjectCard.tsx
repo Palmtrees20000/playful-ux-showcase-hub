@@ -29,6 +29,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
       className={project.featured ? "md:col-span-2 lg:col-span-2" : ""}
+      onClick={() => window.open(project.link, '_blank')}
     >
       <Card className="h-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-gray-50">
         <div className="relative overflow-hidden">
@@ -68,6 +69,10 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             <Button 
               size="sm" 
               className="bg-white text-gray-900 hover:bg-white/90"
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(project.link, '_blank');
+              }}
             >
               View Project
               <ExternalLink className="ml-2 h-4 w-4" />
