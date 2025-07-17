@@ -4,6 +4,7 @@ import { ExternalLink, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -29,7 +30,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
       className={project.featured ? "md:col-span-2 lg:col-span-2" : ""}
-      onClick={() => window.open(project.link, '_blank')}
     >
       <Card className="h-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-gray-50">
         <div className="relative overflow-hidden">
@@ -66,17 +66,29 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <motion.div
             className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8"
           >
-            <Button 
-              size="sm" 
-              className="bg-white text-gray-900 hover:bg-white/90"
-              onClick={(e) => {
-                e.stopPropagation();
-                window.open(project.link, '_blank');
-              }}
-            >
-              View Project
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
+            {project.link.startsWith('/') ? (
+              <Link to={project.link}>
+                <Button 
+                  size="sm" 
+                  className="bg-white text-gray-900 hover:bg-white/90"
+                >
+                  View Case Study
+                  <Eye className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            ) : (
+              <Button 
+                size="sm" 
+                className="bg-white text-gray-900 hover:bg-white/90"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(project.link, '_blank');
+                }}
+              >
+                View Project
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+            )}
           </motion.div>
         </div>
         
