@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 const AwardcoCaseStudy = () => {
   const processImages = [
-    "/lovable-uploads/061ded9b-5c28-4f26-820e-dfab1ae2aea1.png",
-    "/lovable-uploads/6b2c4d28-4b5a-406f-a3a6-c5b56e5350bd.png", 
-    "/lovable-uploads/0d5ed484-0cc2-48b7-bafa-3e6ff39aa28b.png",
-    "/lovable-uploads/1bdd6f75-5786-4388-ad2a-46ed51f973c1.png"
+    "/lovable-uploads/7748727c-ba3e-4922-a70a-661041a0701b.png",
+    "/lovable-uploads/ed6bff6f-db96-424f-9e05-e842cd23b3d1.png", 
+    "/lovable-uploads/5f7df5fd-378e-46d7-96b4-df734863cf7b.png",
+    "/lovable-uploads/0834fe85-1559-4034-b19b-9e005735f2e7.png"
   ];
 
   const finalDesigns = [
