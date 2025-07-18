@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Users, Target, Lightbulb, TrendingUp } from "lucide-react";
+import { ArrowLeft, Users, Target, Lightbulb, TrendingUp, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const AwardcoCaseStudy = () => {
   const processImages = [
@@ -151,13 +153,26 @@ const AwardcoCaseStudy = () => {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <img 
-                    src={image} 
-                    alt={`Design process ${index + 1}`}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </Card>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                      <img 
+                        src={image} 
+                        alt={`Design process ${index + 1}`}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </Card>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
+                    <div className="relative">
+                      <img 
+                        src={image} 
+                        alt={`Design process ${index + 1}`}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </motion.div>
             ))}
           </div>
@@ -236,13 +251,26 @@ const AwardcoCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <Card className="overflow-hidden">
-                  <img 
-                    src={image} 
-                    alt={`Final design ${index + 1}`}
-                    className="w-full h-auto"
-                  />
-                </Card>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                      <img 
+                        src={image} 
+                        alt={`Final design ${index + 1}`}
+                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                      />
+                    </Card>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
+                    <div className="relative">
+                      <img 
+                        src={image} 
+                        alt={`Final design ${index + 1}`}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </motion.div>
             ))}
           </div>
