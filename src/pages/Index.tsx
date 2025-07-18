@@ -24,33 +24,6 @@ const Index = () => {
       tags: ["UX Design", "User Research", "Figma", "Wireframing"],
       link: "/case-study/awardco",
       featured: true
-    },
-    {
-      id: 2,
-      title: "Mobile App Redesign",
-      description: "Complete mobile experience redesign focusing on user journey optimization and accessibility.",
-      image: "/placeholder.svg",
-      tags: ["Mobile Design", "Prototyping", "User Testing", "Accessibility"],
-      link: "#",
-      featured: false
-    },
-    {
-      id: 3,
-      title: "E-commerce Platform",
-      description: "End-to-end design system creation for a modern e-commerce platform with focus on conversion.",
-      image: "/placeholder.svg",
-      tags: ["Design Systems", "E-commerce", "Conversion Optimization", "Analytics"],
-      link: "#",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Dashboard Analytics",
-      description: "Data visualization dashboard design helping users make informed business decisions.",
-      image: "/placeholder.svg",
-      tags: ["Data Visualization", "Dashboard Design", "Analytics", "User Research"],
-      link: "#",
-      featured: false
     }
   ];
 
