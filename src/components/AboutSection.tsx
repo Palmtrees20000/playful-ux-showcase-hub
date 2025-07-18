@@ -59,10 +59,12 @@ const AboutSection = () => {
           >
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-teal-400 via-purple-500 to-orange-400 p-1">
-                <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                  <div className="w-60 h-60 rounded-full bg-gradient-to-br from-teal-100 to-purple-100 flex items-center justify-center">
-                    <span className="text-6xl">👋</span>
-                  </div>
+                <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/6510e755-6be4-4246-856d-ee51bf76aba1.png"
+                    alt="Palmer Charles"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
               <motion.div
