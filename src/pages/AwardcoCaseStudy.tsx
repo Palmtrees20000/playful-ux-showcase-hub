@@ -129,7 +129,7 @@ const AwardcoCaseStudy = () => {
           
           <div className="mb-8">
             <p className="text-lg text-gray-600 mb-6">
-              As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Despite limited access to the existing Awardco UI, I focused on:
+              As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Due to a signed NDA, I cannot show all project details or visuals, but I'll walk through my role and process. Despite limited access to the existing Awardco UI, I focused on:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
               <li>Listing key features users might need or expect</li>
