@@ -85,7 +85,7 @@ const AwardcoCaseStudy = () => {
           </div>
         </motion.div>
 
-        {/* Problem Statement */}
+        {/* Understanding the Problem */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,19 +93,31 @@ const AwardcoCaseStudy = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6">The Challenge</h2>
+          <h2 className="text-3xl font-bold mb-6">💡 Understanding the Problem</h2>
           <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200">
             <CardContent className="p-8">
-              <p className="text-lg leading-relaxed text-gray-700">
-                The existing employee recognition system had complex workflows that hindered managers from 
-                efficiently recognizing their teams. Users struggled with lengthy processes, unclear navigation, 
-                and poor mobile experience, resulting in decreased engagement with the platform.
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
+                We kicked off with team discussions around two key questions:
+              </p>
+              <div className="space-y-4 mb-6">
+                <p className="text-lg font-medium text-gray-800 italic">
+                  "What can a user consume that would make them want to create (i.e., post)?"
+                </p>
+                <p className="text-lg font-medium text-gray-800 italic">
+                  "What can a user consume that would make them want to claim (i.e., earn rewards)?"
+                </p>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                To better understand the problem, our team created user journey maps to visualize scenarios where users interacted with the platform. One journey involved an employee being asked to recognize a colleague but feeling unmotivated to do so. We asked ourselves:
+              </p>
+              <p className="text-lg font-semibold text-gray-800">
+                How might we increase user engagement and curiosity beyond that single task?
               </p>
             </CardContent>
           </Card>
         </motion.section>
 
-        {/* Process Section */}
+        {/* My Design Approach */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,16 +125,19 @@ const AwardcoCaseStudy = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6">Design Process</h2>
+          <h2 className="text-3xl font-bold mb-6">✏️ My Design Approach</h2>
           
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4 flex items-center">
-              <Lightbulb className="w-5 h-5 mr-2 text-yellow-600" />
-              Wireframing & User Flows
-            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+              As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Despite limited access to the existing Awardco UI, I focused on:
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
+              <li>Listing key features users might need or expect</li>
+              <li>Sketching initial ideas and layout possibilities</li>
+              <li>Iterating quickly into low-fidelity wireframes using Figma</li>
+            </ul>
             <p className="text-gray-600 mb-6">
-              Started with whiteboard sessions to map user journeys and identify pain points. 
-              Created low-fidelity wireframes to test different interaction patterns and information architecture.
+              This approach helped me translate abstract ideas into actionable design elements, even under uncertainty.
             </p>
           </div>
 
@@ -148,6 +163,53 @@ const AwardcoCaseStudy = () => {
           </div>
         </motion.section>
 
+        {/* Team Collaboration & Growth */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">🧠 Team Collaboration & Growth</h2>
+          <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <CardContent className="p-8">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
+                Working with a more experienced team challenged me in the best ways. I had to quickly adapt to:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
+                <li>UX-specific terminology and workflows</li>
+                <li>Fast-paced brainstorming sessions</li>
+                <li>Stakeholder expectations</li>
+              </ul>
+              <p className="text-lg leading-relaxed text-gray-700">
+                There were moments of doubt, especially when feedback was tough or my ideas didn't land. But I learned to ask better questions, embrace critique, and refine my communication. One pivotal moment came when I had to defend my design direction and explain how it addressed user needs — this pushed me to think more strategically.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.section>
+
+        {/* Testing & Feedback */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">🧪 Testing & Feedback</h2>
+          <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
+            <CardContent className="p-8">
+              <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                We conducted internal usability testing with Awardco employees to validate early concepts. Feedback revealed that many users were more familiar with third-party platforms than the Awardco ecosystem — a critical insight that influenced our design adjustments.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Due to time constraints and limited UI access, we weren't able to create high-fidelity, fully branded mockups. However, our wireframes and concepts were well-received and helped shape future exploration.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.section>
+
         {/* Solution Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -165,7 +227,7 @@ const AwardcoCaseStudy = () => {
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {finalDesigns.map((image, index) => (
               <motion.div
                 key={index}
@@ -231,7 +293,7 @@ const AwardcoCaseStudy = () => {
           </div>
         </motion.section>
 
-        {/* Results */}
+        {/* Tools Used */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -239,23 +301,49 @@ const AwardcoCaseStudy = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6">Results & Impact</h2>
-          <Card className="bg-gradient-to-br from-green-50 to-teal-50 border-green-200">
+          <h2 className="text-3xl font-bold mb-6">🧰 Tools Used</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Card className="p-4 text-center">
+              <h3 className="font-semibold text-sm">Figma</h3>
+              <p className="text-xs text-gray-600 mt-1">Wireframes & visual design</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="font-semibold text-sm">FigJam</h3>
+              <p className="text-xs text-gray-600 mt-1">Brainstorming & journey mapping</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="font-semibold text-sm">Notion</h3>
+              <p className="text-xs text-gray-600 mt-1">Documentation and team planning</p>
+            </Card>
+            <Card className="p-4 text-center">
+              <h3 className="font-semibold text-sm">Discord / Slack</h3>
+              <p className="text-xs text-gray-600 mt-1">Communication & feedback</p>
+            </Card>
+          </div>
+        </motion.section>
+
+        {/* Final Thoughts */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">💭 Final Thoughts</h2>
+          <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
             <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <h3 className="text-2xl font-bold text-green-700 mb-2">Improved</h3>
-                  <p className="text-gray-600">User engagement workflows</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-teal-700 mb-2">Streamlined</h3>
-                  <p className="text-gray-600">Recognition processes</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-blue-700 mb-2">Enhanced</h3>
-                  <p className="text-gray-600">Mobile experience</p>
-                </div>
-              </div>
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
+                This sprint taught me the importance of:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
+                <li>Clear communication in a team setting</li>
+                <li>Designing under real-world constraints</li>
+                <li>Listening deeply to both users and teammates</li>
+              </ul>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Though the experience was intense, it gave me confidence in my ability to contribute to UX projects under pressure and collaborate meaningfully — even when I felt out of my depth.
+              </p>
             </CardContent>
           </Card>
         </motion.section>
