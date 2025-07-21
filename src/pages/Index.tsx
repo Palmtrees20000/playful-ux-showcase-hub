@@ -57,22 +57,13 @@ const Index = () => {
           </motion.div>
           
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            className="text-5xl md:text-7xl font-bold text-white mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Hi, I'm Palmer — UX Designer & Problem Solver
-          </motion.h1>
-          
-          <motion.p 
-            className="text-xl md:text-2xl text-white/90 mb-8 font-light"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
             I transform real-world insights into intuitive digital solutions.
-          </motion.p>
+          </motion.h1>
           
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center"
