@@ -9,6 +9,7 @@ import ProjectCard from "@/components/ProjectCard";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import FloatingShapes from "@/components/FloatingShapes";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const { scrollYProgress } = useScroll();
@@ -61,23 +62,32 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            UX Designer
+            Turning Insights into Impactful Design
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-white/90 mb-8 font-light"
+            className="text-xl md:text-2xl text-white/90 mb-4 font-light"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             Transforming user insights into intuitive digital designs
           </motion.p>
+
+          <motion.p 
+            className="text-lg md:text-xl text-white/80 mb-8 font-light max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            Hi, I'm Palmer — I design thoughtful, user-centered digital experiences that solve real problems.
+          </motion.p>
           
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
           >
             <Button 
               size="lg" 
@@ -90,7 +100,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+              className="border-white text-white bg-transparent hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
@@ -137,6 +147,9 @@ const Index = () => {
 
       {/* Contact Section */}
       <ContactSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ArrowLeft, Users, Target, Lightbulb, TrendingUp, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -54,9 +55,13 @@ const AwardcoCaseStudy = () => {
             </Badge>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
-            Employee Recognition Platform
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
+            Employee Recognition Platform at Awardco
           </h1>
+          
+          <p className="text-lg font-bold text-gray-700 mb-6">
+            Due to a signed NDA
+          </p>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             A 6-week UX sprint redesigning employee recognition workflows to increase engagement and streamline award processes for a workforce of 10,000+ employees.
@@ -163,12 +168,12 @@ const AwardcoCaseStudy = () => {
                       />
                     </Card>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
-                    <div className="relative">
+                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
+                    <div className="relative flex items-center justify-center">
                       <img 
                         src={image} 
                         alt={`Design process ${index + 1}`}
-                        className="w-full h-auto"
+                        className="max-w-full max-h-[85vh] object-contain"
                       />
                     </div>
                   </DialogContent>
@@ -261,12 +266,12 @@ const AwardcoCaseStudy = () => {
                       />
                     </Card>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
-                    <div className="relative">
+                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
+                    <div className="relative flex items-center justify-center">
                       <img 
                         src={image} 
                         alt={`Final design ${index + 1}`}
-                        className="w-full h-auto"
+                        className="max-w-full max-h-[85vh] object-contain"
                       />
                     </div>
                   </DialogContent>

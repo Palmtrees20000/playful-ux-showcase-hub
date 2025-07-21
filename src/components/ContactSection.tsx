@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Linkedin, Github, Send, Coffee } from "lucide-react";
+import { Mail, Linkedin, Github, Send, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -31,19 +31,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:palmer@example.com",
+      href: "mailto:pacharles@charlesllc.com",
       color: "from-red-400 to-pink-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/palmer-charles-558398275/",
       color: "from-blue-400 to-blue-600"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/Palmtrees20000",
       color: "from-gray-400 to-gray-600"
     }
   ];
@@ -79,8 +79,8 @@ const ContactSection = () => {
             <Card className="p-8 shadow-lg">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold mb-6 flex items-center">
-                  <Coffee className="mr-3 text-orange-500" />
-                  Let's Grab Coffee (Virtually)
+                  <MessageCircle className="mr-3 text-purple-500" />
+                  Let's Chat
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -148,6 +148,8 @@ const ContactSection = () => {
                 <motion.a
                   key={link.label}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
