@@ -54,7 +54,7 @@ const Navigation = () => {
             className="font-bold text-2xl bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Palmer Charles
+            P
           </motion.div>
 
           {/* Desktop Menu */}
