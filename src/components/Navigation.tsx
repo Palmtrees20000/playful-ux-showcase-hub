@@ -51,10 +51,9 @@ const Navigation = () => {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <motion.div
-            className="font-bold text-2xl bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent"
+            className="w-8 h-8"
             whileHover={{ scale: 1.05 }}
           >
-            P
           </motion.div>
 
           {/* Desktop Menu */}

@@ -11,6 +11,7 @@ interface Project {
   title: string;
   description: string;
   image: string;
+  logo?: string;
   tags: string[];
   link: string;
   featured: boolean;
@@ -22,6 +23,14 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const handleCardClick = () => {
+    if (project.link.startsWith('/')) {
+      window.location.href = project.link;
+    } else {
+      window.open(project.link, '_blank');
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -30,6 +39,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
       className={project.featured ? "md:col-span-2 lg:col-span-2" : ""}
+      onClick={handleCardClick}
     >
       <Card className="h-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-gray-50">
         <div className="relative overflow-hidden">
@@ -44,9 +54,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               transition={{ duration: 0.3 }}
               className="relative z-10"
             >
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <Eye className="w-8 h-8 text-white" />
-              </div>
+              {project.logo ? (
+                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center p-3">
+                  <img src={project.logo} alt={`${project.title} logo`} className="w-full h-full object-contain" />
+                </div>
+              ) : (
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                  <Eye className="w-8 h-8 text-white" />
+                </div>
+              )}
             </motion.div>
             
             {project.featured && (

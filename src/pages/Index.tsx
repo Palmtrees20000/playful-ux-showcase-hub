@@ -22,6 +22,7 @@ const Index = () => {
       title: "Awardco UX Sprint",
       description: "A 6-week summer sprint improving user engagement through redesigned workflows and testing.",
       image: "/placeholder.svg",
+      logo: "/lovable-uploads/f0cb4fe8-8bc1-4481-9ce2-dcace802b281.png",
       tags: ["UX Design", "User Research", "Figma", "Wireframing"],
       link: "/case-study/awardco",
       featured: true
