@@ -164,7 +164,7 @@ const ContactSection = () => {
                     <div className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
                       {link.label}
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-xs text-gray-400">
                       Click to connect
                     </div>
                   </div>
@@ -179,7 +179,7 @@ const ContactSection = () => {
               viewport={{ once: true }}
               className="p-6 bg-gradient-to-r from-teal-50 to-purple-50 rounded-xl border border-purple-100"
             >
-              <h4 className="font-bold text-gray-900 mb-2">Quick Response Promise</h4>
+              <h4 className="font-bold text-gray-900 mb-2">Fast Replies, Friendly Vibes 😄</h4>
               <p className="text-sm text-gray-600">
                 I typically respond to messages within 24 hours. Looking forward to connecting with you!
               </p>

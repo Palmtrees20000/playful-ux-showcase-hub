@@ -44,9 +44,12 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
-            About Me
-          </h2>
+          <div className="mb-6">
+            <p className="text-sm text-gray-500 mb-2">UX Designer | Problem Solver | Storyteller</p>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
+              About Me
+            </h2>
+          </div>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-purple-400 mx-auto mb-8 rounded-full" />
         </motion.div>
 
@@ -90,7 +93,7 @@ const AboutSection = () => {
             <h3 className="text-3xl font-bold text-gray-900">
               Hi! I'm Palmer Charles
             </h3>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
                 A passionate UX designer with a love for turning complex ideas into intuitive, 
                 user-centered experiences. My journey into UX started when I first saw the term 

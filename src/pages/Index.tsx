@@ -58,12 +58,12 @@ const Index = () => {
           </motion.div>
           
           <motion.h1 
-            className="text-2xl md:text-3xl font-light text-white mb-8"
+            className="text-xl md:text-2xl font-light text-white mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <span className="font-bold">Hi, I'm Palmer</span> — I transform real-world insights into intuitive digital solutions.
+            Hi, I'm <span className="font-bold">Palmer</span> — I transform real-world insights into intuitive digital solutions.
           </motion.h1>
           
           <motion.div

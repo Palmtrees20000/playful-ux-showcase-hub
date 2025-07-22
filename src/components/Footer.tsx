@@ -31,7 +31,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row items-center justify-between gap-4"
         >
-          <div className="text-gray-600">
+          <div className="text-gray-500 text-sm text-center md:text-left">
             © Palmer's Portfolio 2025
           </div>
           
