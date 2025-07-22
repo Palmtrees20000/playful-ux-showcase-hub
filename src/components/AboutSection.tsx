@@ -45,10 +45,10 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <div className="mb-6">
-            <p className="text-sm text-gray-500 mb-2">UX Designer | Problem Solver | Storyteller</p>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent mb-2">
               About Me
             </h2>
+            <p className="text-sm text-gray-500">UX Designer | Problem Solver | Storyteller</p>
           </div>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-purple-400 mx-auto mb-8 rounded-full" />
         </motion.div>

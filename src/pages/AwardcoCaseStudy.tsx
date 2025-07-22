@@ -60,7 +60,7 @@ const AwardcoCaseStudy = () => {
           </h1>
           
           <p className="text-lg font-bold text-gray-700 mb-6">
-            Due to a signed NDA, I can only share limited project details in this case study — but here's what I can show!
+            Due to a signed NDA, I'm only able to share limited project details — but here's what I can show!
           </p>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -136,7 +136,7 @@ const AwardcoCaseStudy = () => {
           
           <div className="mb-8">
             <p className="text-lg text-gray-600 mb-6">
-              As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Due to a signed NDA, I cannot show all project details or visuals, but I'll walk through my role and process. Despite limited access to the existing Awardco UI, I focused on:
+              As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Due to a signed NDA, I'm only able to show limited project details or visuals, but I'll walk through my role and process. Despite limited access to the existing Awardco UI, I focused on:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
               <li>Listing key features users might need or expect</li>
@@ -374,8 +374,11 @@ const AwardcoCaseStudy = () => {
                 <li>Designing under real-world constraints</li>
                 <li>Listening deeply to both users and teammates</li>
               </ul>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Though the experience was intense, it gave me confidence in my ability to contribute to UX projects under pressure and collaborate meaningfully — even when I felt out of my depth.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-700">
+                Working at Awardco helped me grow in professional collaboration and systems thinking. It challenged me to work fast, learn new tools, and adapt quickly. I'd love to do more design system work like this in the future.
               </p>
             </CardContent>
           </Card>

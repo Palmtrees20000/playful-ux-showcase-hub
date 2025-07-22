@@ -55,7 +55,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               className="relative z-10"
             >
               {project.logo ? (
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center p-3">
+                <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center p-4">
                   <img src={project.logo} alt={`${project.title} logo`} className="w-full h-full object-contain" />
                 </div>
               ) : (
