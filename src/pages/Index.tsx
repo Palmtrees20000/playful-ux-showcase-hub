@@ -26,6 +26,16 @@ const Index = () => {
       tags: ["UX Design", "User Research", "Figma", "Wireframing"],
       link: "/case-study/awardco",
       featured: true
+    },
+    {
+      id: 2,
+      title: "Craigslist Mobile App Redesign",
+      description: "A modern redesign of the Craigslist mobile app focusing on improved navigation and visual hierarchy.",
+      image: "/placeholder.svg",
+      logo: "/lovable-uploads/7748727c-ba3e-4922-a70a-661041a0701b.png",
+      tags: ["UI/UX Design", "Mobile Design", "Figma", "Visual Design"],
+      link: "/case-study/craigslist",
+      featured: true
     }
   ];
 
