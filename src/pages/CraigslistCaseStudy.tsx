@@ -111,7 +111,7 @@ const CraigslistCaseStudy = () => {
                   <div>
                     <div className="space-y-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm">1</div>
+                        <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">1</div>
                         <div>
                           <h3 className="font-semibold text-gray-800 mb-2">Discovery</h3>
                           <p className="text-gray-600">Reviewed Craigslist's current UI to identify usability issues and pain points.</p>
@@ -119,7 +119,7 @@ const CraigslistCaseStudy = () => {
                       </div>
                       
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm">2</div>
+                        <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">2</div>
                         <div>
                           <h3 className="font-semibold text-gray-800 mb-2">Sketching</h3>
                           <p className="text-gray-600">Drew early layout concepts to explore improved navigation and hierarchy.</p>
@@ -127,7 +127,7 @@ const CraigslistCaseStudy = () => {
                       </div>
                       
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm">3</div>
+                        <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">3</div>
                         <div>
                           <h3 className="font-semibold text-gray-800 mb-2">Wireframing</h3>
                           <p className="text-gray-600">Built low-fidelity frames in Figma to test structure and flow.</p>
@@ -135,7 +135,7 @@ const CraigslistCaseStudy = () => {
                       </div>
                       
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm">4</div>
+                        <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">4</div>
                         <div>
                           <h3 className="font-semibold text-gray-800 mb-2">High-Fidelity Design</h3>
                           <p className="text-gray-600">Created final UI mockups with a cleaner layout, improved typography and spacing, and more intuitive interactions.</p>
