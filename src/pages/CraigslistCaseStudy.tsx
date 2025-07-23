@@ -96,11 +96,43 @@ const CraigslistCaseStudy = () => {
             </Card>
           </motion.div>
 
-          {/* Design Process */}
+          {/* Early Ideation */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            className="mb-16"
+          >
+            <Card className="border-purple-200 shadow-lg">
+              <CardContent className="p-8">
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">Early Ideation</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-4">Initial Sketches</h3>
+                    <img src="/lovable-uploads/f0cb4fe8-8bc1-4481-9ce2-dcace802b281.png" alt="Initial sketches and ideas" className="w-full rounded-lg shadow-md" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-4">Mood Board & Current State</h3>
+                    <div className="space-y-4">
+                      <img src="/lovable-uploads/ed6bff6f-db96-424f-9e05-e842cd23b3d1.png" alt="Mood board inspiration" className="w-full rounded-lg shadow-md" />
+                      <img src="/lovable-uploads/5f7df5fd-378e-46d7-96b4-df734863cf7b.png" alt="Current mobile app interface" className="w-full rounded-lg shadow-md" />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  The initial ideation phase involved sketching out layout concepts and gathering visual inspiration. 
+                  The mood board helped establish the visual direction while analyzing the current mobile interface 
+                  revealed opportunities for improved user experience and modern design patterns.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Design Process */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="mb-16"
           >
             <Card className="border-purple-200 shadow-lg">
@@ -300,7 +332,9 @@ const CraigslistCaseStudy = () => {
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Project Reflection</h2>
                 
                 <p className="text-lg text-gray-600 mb-6">
-                  This college project taught me valuable lessons about redesigning established platforms while respecting their core functionality. Working within the constraints of Craigslist's existing user expectations helped me focus on meaningful improvements rather than complete overhauls.
+                  This project taught me the importance of modernizing app designs to improve usability and visual appeal. 
+                  I also learned how valuable it is to reference other platforms—like Facebook Marketplace and KSL—to 
+                  understand what they do differently and draw inspiration from their strengths to inform my own design decisions.
                 </p>
                 
                 <div className="bg-purple-50 rounded-lg p-6">
