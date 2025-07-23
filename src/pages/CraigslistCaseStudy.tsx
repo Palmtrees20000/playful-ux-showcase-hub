@@ -36,7 +36,7 @@ const CraigslistCaseStudy = () => {
             <div className="flex justify-center mb-8">
               <div className="w-24 h-24 bg-purple-100 rounded-2xl flex items-center justify-center p-4">
                 <img 
-                  src="/lovable-uploads/7748727c-ba3e-4922-a70a-661041a0701b.png" 
+                  src="/lovable-uploads/606db17c-6579-4608-957e-8229e6767f02.png" 
                   alt="Craigslist Redesign Logo" 
                   className="w-full h-full object-contain"
                 />
