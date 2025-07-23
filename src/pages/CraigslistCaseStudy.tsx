@@ -185,13 +185,6 @@ const CraigslistCaseStudy = () => {
                   </div>
                   <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
                     <img 
-                      src="/lovable-uploads/341aedef-4aa4-4a4c-bf06-664e32ae2220.png" 
-                      alt="Home Screen Categories" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
                       src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" 
                       alt="Search Screen" 
                       className="w-full h-full object-contain rounded-lg shadow-md"
@@ -201,27 +194,6 @@ const CraigslistCaseStudy = () => {
                     <img 
                       src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" 
                       alt="Search Results - Car Parts" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/1bdd6f75-5786-4388-ad2a-46ed51f973c1.png" 
-                      alt="Categories Screen" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/f0cb4fe8-8bc1-4481-9ce2-dcace802b281.png" 
-                      alt="Listing Details" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/5f7df5fd-378e-46d7-96b4-df734863cf7b.png" 
-                      alt="Search Results" 
                       className="w-full h-full object-contain rounded-lg shadow-md"
                     />
                   </div>
@@ -264,34 +236,6 @@ const CraigslistCaseStudy = () => {
                     <img 
                       src="/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png" 
                       alt="Settings Screen" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/6b2c4d28-4b5a-406f-a3a6-c5b56e5350bd.png" 
-                      alt="Create Posting" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/6510e755-6be4-4246-856d-ee51bf76aba1.png" 
-                      alt="Profile Screen" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/2957061d-c96a-4ae2-ac8c-52dc27e458f8.png" 
-                      alt="Messages Screen" 
-                      className="w-full h-full object-contain rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/0d5ed484-0cc2-48b7-bafa-3e6ff39aa28b.png" 
-                      alt="Favorites Screen" 
                       className="w-full h-full object-contain rounded-lg shadow-md"
                     />
                   </div>
