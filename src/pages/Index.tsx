@@ -32,7 +32,7 @@ const Index = () => {
       title: "Craigslist Mobile App Redesign",
       description: "A modern redesign of the Craigslist mobile app focusing on improved navigation and visual hierarchy.",
       image: "/placeholder.svg",
-      logo: "/lovable-uploads/7748727c-ba3e-4922-a70a-661041a0701b.png",
+      logo: "/lovable-uploads/b1227e75-307c-4610-b9bf-4363a2a7fd13.png",
       tags: ["UI/UX Design", "Mobile Design", "Figma", "Visual Design"],
       link: "/case-study/craigslist",
       featured: true
