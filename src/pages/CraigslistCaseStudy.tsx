@@ -109,13 +109,13 @@ const CraigslistCaseStudy = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-4">Initial Sketches</h3>
-                    <img src="/lovable-uploads/f0cb4fe8-8bc1-4481-9ce2-dcace802b281.png" alt="Initial sketches and ideas" className="w-full rounded-lg shadow-md" />
+                    <img src="/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png" alt="Initial sketches and ideas" className="w-full rounded-lg shadow-md" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-4">Mood Board & Current State</h3>
                     <div className="space-y-4">
-                      <img src="/lovable-uploads/ed6bff6f-db96-424f-9e05-e842cd23b3d1.png" alt="Mood board inspiration" className="w-full rounded-lg shadow-md" />
-                      <img src="/lovable-uploads/5f7df5fd-378e-46d7-96b4-df734863cf7b.png" alt="Current mobile app interface" className="w-full rounded-lg shadow-md" />
+                      <img src="/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png" alt="Mood board 1 - Current Craigslist mobile app screenshots" className="w-full rounded-lg shadow-md" />
+                      <img src="/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png" alt="Mood board 2 - Current Craigslist mobile app screenshots" className="w-full rounded-lg shadow-md" />
                     </div>
                   </div>
                 </div>
