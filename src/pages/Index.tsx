@@ -27,7 +27,14 @@ const Index = () => {
     "/lovable-uploads/e05ad64b-a25a-40fb-9165-085007fa7f78.png",
     "/lovable-uploads/749af75d-a662-4ff4-b291-98676687944f.png",
     "/lovable-uploads/1ea35176-3b74-4582-b08b-ce06c37efd52.png",
-    "/lovable-uploads/ca269e3f-25f5-447b-b4a8-911c35375c03.png"
+    "/lovable-uploads/ca269e3f-25f5-447b-b4a8-911c35375c03.png",
+    "/lovable-uploads/fbf0299a-8248-4b7a-9d9d-df3433bd46ff.png",
+    "/lovable-uploads/2326011b-b3ee-4704-8469-1dc54531398b.png",
+    "/lovable-uploads/af5f2f85-8c53-4356-9264-756fe2067701.png",
+    "/lovable-uploads/56ddf9a7-a96c-48a0-9b6c-3ad4742e8283.png",
+    "/lovable-uploads/02f111fe-9ef0-42bd-912a-792e86f00d5e.png",
+    "/lovable-uploads/3c8afaa5-bdaf-4db5-a111-cb6c33bf14d6.png",
+    "/lovable-uploads/9c3907bc-e1d4-40df-bd58-d3d61484bfa3.png"
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
