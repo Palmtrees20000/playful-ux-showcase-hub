@@ -16,6 +16,30 @@ const Index = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
 
+  // Dynamic background cycling
+  const backgroundImages = [
+    "/lovable-uploads/89510afe-32e0-4b4e-a350-2ff0e1b12b92.png",
+    "/lovable-uploads/6796a5e1-a0b9-4ca9-938a-97a4701566df.png",
+    "/lovable-uploads/c8b4a6d1-f8c5-45f3-b5b3-722ee6096b38.png",
+    "/lovable-uploads/b3d18de9-200d-452d-925e-eb17856b18bc.png",
+    "/lovable-uploads/9c34fd52-a9db-4d58-b306-cbe4437c5c61.png",
+    "/lovable-uploads/59785e14-480f-4113-99e5-a493a32dc76e.png",
+    "/lovable-uploads/e05ad64b-a25a-40fb-9165-085007fa7f78.png",
+    "/lovable-uploads/749af75d-a662-4ff4-b291-98676687944f.png",
+    "/lovable-uploads/1ea35176-3b74-4582-b08b-ce06c37efd52.png",
+    "/lovable-uploads/ca269e3f-25f5-447b-b4a8-911c35375c03.png"
+  ];
+
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 4000); // Change every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   const projects = [
     {
       id: 1,
@@ -46,8 +70,29 @@ const Index = () => {
       
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-purple-500 to-orange-400 opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+        {/* Dynamic background images */}
+        {backgroundImages.map((bg, index) => (
+          <motion.div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(${bg})`,
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ 
+              opacity: index === currentBgIndex ? 0.8 : 0,
+              scale: index === currentBgIndex ? 1.05 : 1
+            }}
+            transition={{ 
+              duration: 2,
+              ease: "easeInOut"
+            }}
+          />
+        ))}
+        
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
         
         <motion.div 
           className="relative z-10 text-center px-6 max-w-4xl mx-auto"
@@ -127,10 +172,12 @@ const Index = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-purple-400 mx-auto mb-8 rounded-full" />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <ProjectCard key={project.id} project={project} index={index} />
-            ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+              {projects.map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
