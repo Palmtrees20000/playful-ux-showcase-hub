@@ -239,7 +239,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png" alt="Home Screen - For Sale Near You" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
@@ -253,7 +253,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" alt="Search Screen" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
@@ -267,7 +267,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" alt="Search Results - Car Parts" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
@@ -281,7 +281,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png" alt="Create a Post" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
@@ -295,7 +295,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png" alt="Messages Screen" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
@@ -309,7 +309,7 @@ const CraigslistCaseStudy = () => {
                           className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-lg">
+                      <DialogContent className="max-w-sm">
                         <img src="/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png" alt="Notifications Screen" className="w-full h-auto" />
                       </DialogContent>
                     </Dialog>
