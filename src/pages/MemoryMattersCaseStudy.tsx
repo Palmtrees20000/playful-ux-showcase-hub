@@ -369,7 +369,7 @@ const MemoryMattersCaseStudy = () => {
                   <img 
                     src={image} 
                     alt={`Final design ${index + 1}`}
-                    className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto max-h-96 object-contain hover:scale-105 transition-transform duration-300"
                   />
                 </Card>
               </motion.div>
