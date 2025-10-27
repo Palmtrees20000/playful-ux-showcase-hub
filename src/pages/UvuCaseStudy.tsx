@@ -18,6 +18,11 @@ const UvuCaseStudy = () => {
     "/lovable-uploads/uvu-wireframe-4.jpg"
   ];
 
+  const surfaceCompImages = [
+    "/lovable-uploads/uvu-donate-page.jpg",
+    "/lovable-uploads/uvu-career-page.png"
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -266,6 +271,69 @@ const UvuCaseStudy = () => {
                       <img 
                         src={image} 
                         alt={`Wireframe ${index + 1}`}
+                        className="max-w-full max-h-[85vh] object-contain"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Surface Comps */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">🎨 Surface Comps</h2>
+          
+          <Card className="mb-8 bg-gradient-to-br from-indigo-50 to-blue-50 border-indigo-200">
+            <CardContent className="p-8">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                After wireframing, the team started their surface comps to give the webpages life. 
+                In addition, other changes have been made to make the web pages flow and stay consistently better.
+              </p>
+              
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold">Key Improvements:</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Removed the "Dean section" to streamline content</li>
+                  <li>Relocated "Student Testimonials" to the Donation page</li>
+                  <li>Provided context and rationale rather than a "give me money" approach</li>
+                  <li>Enhanced visual consistency across all pages</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {surfaceCompImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                      <img 
+                        src={image} 
+                        alt={`Surface comp ${index + 1}`}
+                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                      />
+                    </Card>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
+                    <div className="relative flex items-center justify-center">
+                      <img 
+                        src={image} 
+                        alt={`Surface comp ${index + 1}`}
                         className="max-w-full max-h-[85vh] object-contain"
                       />
                     </div>
