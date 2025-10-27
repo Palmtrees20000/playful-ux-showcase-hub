@@ -36,6 +36,46 @@ const Index = () => {
       tags: ["UI/UX Design", "Mobile Design", "Figma", "Visual Design"],
       link: "/case-study/craigslist",
       featured: true
+    },
+    {
+      id: 3,
+      title: "UVU College of Engineering Redesign",
+      description: "Redesigning the digital experience for Utah Valley University's College of Engineering.",
+      image: "/placeholder.svg",
+      logo: "/placeholder.svg",
+      tags: ["UI/UX Design", "Web Design", "User Experience"],
+      link: "#",
+      featured: true
+    },
+    {
+      id: 4,
+      title: "MemoryMatters Website Design",
+      description: "Creating a compassionate digital platform for memory care and support services.",
+      image: "/placeholder.svg",
+      logo: "/placeholder.svg",
+      tags: ["Web Design", "UI Design", "Accessibility"],
+      link: "#",
+      featured: true
+    },
+    {
+      id: 5,
+      title: "CollectedAF",
+      description: "A modern platform for collectors to showcase and manage their collections.",
+      image: "/placeholder.svg",
+      logo: "/placeholder.svg",
+      tags: ["UX Design", "Web Design", "Product Design"],
+      link: "#",
+      featured: true
+    },
+    {
+      id: 6,
+      title: "The Best Chocolate Chip Cookie Recipe Ever Redesign",
+      description: "Reimagining the recipe experience with an intuitive, delicious interface.",
+      image: "/placeholder.svg",
+      logo: "/placeholder.svg",
+      tags: ["UI Design", "Web Design", "Visual Design"],
+      link: "#",
+      featured: true
     }
   ];
 
