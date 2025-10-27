@@ -13,8 +13,6 @@ const MemoryMattersCaseStudy = () => {
   ];
 
   const designImages = [
-    "/lovable-uploads/mm-header.png",
-    "/lovable-uploads/mm-grid.jpg",
     "/lovable-uploads/mm-mobile.png",
     "/lovable-uploads/mm-tablet.png",
     "/lovable-uploads/mm-desktop.png"
