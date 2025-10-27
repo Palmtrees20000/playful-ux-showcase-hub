@@ -20,7 +20,8 @@ const UvuCaseStudy = () => {
 
   const surfaceCompImages = [
     "/lovable-uploads/uvu-donate-page.jpg",
-    "/lovable-uploads/uvu-career-page.png"
+    "/lovable-uploads/uvu-career-page.png",
+    "/lovable-uploads/uvu-interest-quiz.png"
   ];
 
   return (
