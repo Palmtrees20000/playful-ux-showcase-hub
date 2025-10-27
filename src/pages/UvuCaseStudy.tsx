@@ -13,7 +13,6 @@ const UvuCaseStudy = () => {
   ];
 
   const wireframeImages = [
-    "/lovable-uploads/uvu-wireframe-1.png",
     "/lovable-uploads/uvu-wireframe-2.jpg",
     "/lovable-uploads/uvu-wireframe-3.jpg",
     "/lovable-uploads/uvu-wireframe-4.jpg"
