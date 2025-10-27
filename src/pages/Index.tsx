@@ -86,7 +86,13 @@ const Index = () => {
       
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal-400 via-purple-500 to-orange-400 opacity-90" />
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/hero-gradient.png" 
+            alt="Hero background" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
         
         <motion.div 
