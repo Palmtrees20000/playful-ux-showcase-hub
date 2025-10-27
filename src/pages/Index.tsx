@@ -42,7 +42,7 @@ const Index = () => {
       title: "UVU College of Engineering Redesign",
       description: "Redesigning the digital experience for Utah Valley University's College of Engineering.",
       image: "/lovable-uploads/uvu-surface-1.jpg",
-      logo: "/lovable-uploads/uvu-wireframe-1.png",
+      logo: "/lovable-uploads/uvu-logo.png",
       tags: ["UI/UX Design", "Web Design", "User Experience"],
       link: "/case-study/uvu",
       featured: true
