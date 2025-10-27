@@ -256,7 +256,7 @@ const MemoryMattersCaseStudy = () => {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {designImages.map((image, index) => (
               <motion.div
                 key={index}
