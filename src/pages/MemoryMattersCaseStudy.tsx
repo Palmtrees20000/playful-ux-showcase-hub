@@ -1,12 +1,22 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Heart, Target, Palette, CheckCircle } from "lucide-react";
+import { ArrowLeft, Heart, Target, Palette, CheckCircle, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const MemoryMattersCaseStudy = () => {
+  const [sketchGalleryOpen, setSketchGalleryOpen] = useState(false);
+  const [sketchCurrentIndex, setSketchCurrentIndex] = useState(0);
+  
+  const [designGalleryOpen, setDesignGalleryOpen] = useState(false);
+  const [designCurrentIndex, setDesignCurrentIndex] = useState(0);
+  
+  const [finalGalleryOpen, setFinalGalleryOpen] = useState(false);
+  const [finalCurrentIndex, setFinalCurrentIndex] = useState(0);
+
   const sketchImages = [
     "/lovable-uploads/mm-wireframes.png",
     "/lovable-uploads/mm-sitemap.png"
@@ -22,6 +32,34 @@ const MemoryMattersCaseStudy = () => {
     "/lovable-uploads/mm-final-desktop.png",
     "/lovable-uploads/mm-final-mobile.png"
   ];
+
+  const openSketchGallery = (index: number) => {
+    setSketchCurrentIndex(index);
+    setSketchGalleryOpen(true);
+  };
+
+  const openDesignGallery = (index: number) => {
+    setDesignCurrentIndex(index);
+    setDesignGalleryOpen(true);
+  };
+
+  const openFinalGallery = (index: number) => {
+    setFinalCurrentIndex(index);
+    setFinalGalleryOpen(true);
+  };
+
+  const navigateGallery = (
+    currentIndex: number,
+    setIndex: (index: number) => void,
+    imagesLength: number,
+    direction: 'prev' | 'next'
+  ) => {
+    if (direction === 'prev') {
+      setIndex(currentIndex === 0 ? imagesLength - 1 : currentIndex - 1);
+    } else {
+      setIndex(currentIndex === imagesLength - 1 ? 0 : currentIndex + 1);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -193,26 +231,16 @@ const MemoryMattersCaseStudy = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                          <img 
-                            src={image} 
-                            alt={`Sketch ${index + 1}`}
-                            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        </Card>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                        <div className="relative flex items-center justify-center">
-                          <img 
-                            src={image} 
-                            alt={`Sketch ${index + 1}`}
-                            className="max-w-full max-h-[85vh] object-contain"
-                          />
-                        </div>
-                      </DialogContent>
-                    </Dialog>
+                    <Card 
+                      className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                      onClick={() => openSketchGallery(index)}
+                    >
+                      <img 
+                        src={image} 
+                        alt={`Sketch ${index + 1}`}
+                        className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </Card>
                   </motion.div>
                 ))}
               </div>
@@ -237,26 +265,16 @@ const MemoryMattersCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Design ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Design ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                <Card 
+                  className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                  onClick={() => openDesignGallery(index)}
+                >
+                  <img 
+                    src={image} 
+                    alt={`Design ${index + 1}`}
+                    className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                  />
+                </Card>
               </motion.div>
             ))}
           </div>
@@ -344,26 +362,16 @@ const MemoryMattersCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Final design ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Final design ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                <Card 
+                  className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                  onClick={() => openFinalGallery(index)}
+                >
+                  <img 
+                    src={image} 
+                    alt={`Final design ${index + 1}`}
+                    className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                  />
+                </Card>
               </motion.div>
             ))}
           </div>
@@ -403,6 +411,105 @@ const MemoryMattersCaseStudy = () => {
           </Link>
         </div>
       </div>
+
+      {/* Sketch Gallery */}
+      <Dialog open={sketchGalleryOpen} onOpenChange={setSketchGalleryOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 overflow-hidden">
+          <div className="relative flex items-center justify-center bg-black/95 min-h-[85vh]">
+            <button
+              onClick={() => navigateGallery(sketchCurrentIndex, setSketchCurrentIndex, sketchImages.length, 'prev')}
+              className="absolute left-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-8 h-8 text-white" />
+            </button>
+            
+            <img 
+              src={sketchImages[sketchCurrentIndex]} 
+              alt={`Sketch ${sketchCurrentIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain p-4"
+            />
+            
+            <button
+              onClick={() => navigateGallery(sketchCurrentIndex, setSketchCurrentIndex, sketchImages.length, 'next')}
+              className="absolute right-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-8 h-8 text-white" />
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+              {sketchCurrentIndex + 1} / {sketchImages.length}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Design Gallery */}
+      <Dialog open={designGalleryOpen} onOpenChange={setDesignGalleryOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 overflow-hidden">
+          <div className="relative flex items-center justify-center bg-black/95 min-h-[85vh]">
+            <button
+              onClick={() => navigateGallery(designCurrentIndex, setDesignCurrentIndex, designImages.length, 'prev')}
+              className="absolute left-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-8 h-8 text-white" />
+            </button>
+            
+            <img 
+              src={designImages[designCurrentIndex]} 
+              alt={`Design ${designCurrentIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain p-4"
+            />
+            
+            <button
+              onClick={() => navigateGallery(designCurrentIndex, setDesignCurrentIndex, designImages.length, 'next')}
+              className="absolute right-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-8 h-8 text-white" />
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+              {designCurrentIndex + 1} / {designImages.length}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Final Gallery */}
+      <Dialog open={finalGalleryOpen} onOpenChange={setFinalGalleryOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 overflow-hidden">
+          <div className="relative flex items-center justify-center bg-black/95 min-h-[85vh]">
+            <button
+              onClick={() => navigateGallery(finalCurrentIndex, setFinalCurrentIndex, finalDesigns.length, 'prev')}
+              className="absolute left-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-8 h-8 text-white" />
+            </button>
+            
+            <img 
+              src={finalDesigns[finalCurrentIndex]} 
+              alt={`Final design ${finalCurrentIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain p-4"
+            />
+            
+            <button
+              onClick={() => navigateGallery(finalCurrentIndex, setFinalCurrentIndex, finalDesigns.length, 'next')}
+              className="absolute right-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-8 h-8 text-white" />
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-sm">
+              {finalCurrentIndex + 1} / {finalDesigns.length}
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
