@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 const MemoryMattersCaseStudy = () => {
   const designImages = [
     "/lovable-uploads/mm-header.png",
-    "/lovable-uploads/mm-grid.jpg"
+    "/lovable-uploads/mm-grid.jpg",
+    "/lovable-uploads/mm-wireframes.png",
+    "/lovable-uploads/mm-sitemap.png"
   ];
 
   const finalDesigns = [
