@@ -19,8 +19,8 @@ const MemoryMattersCaseStudy = () => {
   ];
 
   const finalDesigns = [
-    "/lovable-uploads/mm-final-1.jpg",
-    "/lovable-uploads/mm-final-2.jpg"
+    "/lovable-uploads/mm-final-desktop.png",
+    "/lovable-uploads/mm-final-mobile.png"
   ];
 
   return (
