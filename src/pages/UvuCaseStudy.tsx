@@ -19,7 +19,6 @@ const UvuCaseStudy = () => {
   ];
 
   const surfaceCompImages = [
-    "/lovable-uploads/uvu-surface-2.jpg",
     "/lovable-uploads/uvu-surface-3.jpg",
     "/lovable-uploads/uvu-surface-4.jpg",
     "/lovable-uploads/uvu-surface-5.jpg",
