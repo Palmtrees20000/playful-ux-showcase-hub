@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 const UvuCaseStudy = () => {
   const personaImages = [
-    "/lovable-uploads/uvu-personas-1.png",
     "/lovable-uploads/uvu-personas-2.jpg",
     "/lovable-uploads/uvu-personas-3.jpg"
   ];
@@ -138,7 +137,7 @@ const UvuCaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {personaImages.map((image, index) => (
               <motion.div
                 key={index}
