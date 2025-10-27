@@ -72,7 +72,7 @@ const Index = () => {
       title: "The Best Chocolate Chip Cookie Recipe Ever Redesign",
       description: "Reimagining the recipe experience with an intuitive, delicious interface.",
       image: "/placeholder.svg",
-      logo: "/placeholder.svg",
+      logo: "/lovable-uploads/joy-food-sunshine-logo.png",
       tags: ["UI Design", "Web Design", "Visual Design"],
       link: "#",
       featured: true
