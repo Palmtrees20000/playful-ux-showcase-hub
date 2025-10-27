@@ -12,12 +12,6 @@ const MemoryMattersCaseStudy = () => {
     "/lovable-uploads/mm-grid.jpg"
   ];
 
-  const responsiveImages = [
-    { src: "/lovable-uploads/mm-desktop.jpg", alt: "Desktop view" },
-    { src: "/lovable-uploads/mm-tablet.jpg", alt: "Tablet view" },
-    { src: "/lovable-uploads/mm-mobile.jpg", alt: "Mobile view" }
-  ];
-
   const finalDesigns = [
     "/lovable-uploads/mm-final-1.jpg",
     "/lovable-uploads/mm-final-2.jpg"
@@ -219,57 +213,6 @@ const MemoryMattersCaseStudy = () => {
                       <img 
                         src={image} 
                         alt={`Design ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* Responsive Design */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-6">📱 Responsive Design</h2>
-          
-          <p className="text-lg text-gray-700 mb-8">
-            Ensuring <strong>consistency across all device sizes</strong> was crucial for accessibility.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {responsiveImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image.src} 
-                        alt={image.alt}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                      <CardContent className="p-4 text-center">
-                        <p className="font-semibold text-gray-700">{image.alt}</p>
-                      </CardContent>
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image.src} 
-                        alt={image.alt}
                         className="max-w-full max-h-[85vh] object-contain"
                       />
                     </div>
