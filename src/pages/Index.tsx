@@ -108,9 +108,6 @@ const Index = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mx-auto mb-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-teal-300 to-purple-400" />
-            </div>
           </motion.div>
           
           <motion.h1 
