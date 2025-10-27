@@ -62,7 +62,7 @@ const Index = () => {
       title: "CollectedAF",
       description: "A modern platform for collectors to showcase and manage their collections.",
       image: "/placeholder.svg",
-      logo: "/placeholder.svg",
+      logo: "/lovable-uploads/collectedaf-logo.png",
       tags: ["UX Design", "Web Design", "Product Design"],
       link: "#",
       featured: true
