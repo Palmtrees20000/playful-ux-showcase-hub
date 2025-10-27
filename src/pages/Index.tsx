@@ -54,7 +54,7 @@ const Index = () => {
       image: "/placeholder.svg",
       logo: "/placeholder.svg",
       tags: ["Web Design", "UI Design", "Accessibility"],
-      link: "#",
+      link: "/case-study/memory-matters",
       featured: true
     },
     {
