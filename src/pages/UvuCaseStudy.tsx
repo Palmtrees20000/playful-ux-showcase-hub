@@ -18,19 +18,6 @@ const UvuCaseStudy = () => {
     "/lovable-uploads/uvu-wireframe-4.jpg"
   ];
 
-  const surfaceCompImages = [
-    "/lovable-uploads/uvu-surface-3.jpg",
-    "/lovable-uploads/uvu-surface-4.jpg",
-    "/lovable-uploads/uvu-surface-5.jpg",
-    "/lovable-uploads/uvu-surface-6.jpg",
-    "/lovable-uploads/uvu-surface-7.jpg",
-    "/lovable-uploads/uvu-surface-8.jpg",
-    "/lovable-uploads/uvu-surface-9.jpg",
-    "/lovable-uploads/uvu-surface-10.jpg",
-    "/lovable-uploads/uvu-surface-11.jpg",
-    "/lovable-uploads/uvu-surface-12.jpg"
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -280,51 +267,6 @@ const UvuCaseStudy = () => {
                         src={image} 
                         alt={`Wireframe ${index + 1}`}
                         className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* Surface Comps */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-6">🎨 Surface Comps</h2>
-          
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {surfaceCompImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Surface comp ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Surface comp ${index + 1}`}
-                        className="max-w-sm max-h-[85vh] object-contain"
                       />
                     </div>
                   </DialogContent>
