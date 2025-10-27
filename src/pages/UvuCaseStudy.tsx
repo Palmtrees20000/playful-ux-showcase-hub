@@ -235,6 +235,32 @@ const UvuCaseStudy = () => {
 
             </CardContent>
           </Card>
+
+          <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-4">Site Map</h3>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="cursor-pointer">
+                    <img 
+                      src="/lovable-uploads/uvu-sitemap-design.jpg" 
+                      alt="Site map diagram"
+                      className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
+                  <div className="relative flex items-center justify-center">
+                    <img 
+                      src="/lovable-uploads/uvu-sitemap-design.jpg" 
+                      alt="Site map diagram"
+                      className="max-w-full max-h-[85vh] object-contain"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </CardContent>
+          </Card>
         </motion.section>
 
         {/* Wireframing */}
