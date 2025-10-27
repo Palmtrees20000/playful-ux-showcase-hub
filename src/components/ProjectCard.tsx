@@ -38,7 +38,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -10 }}
-      className={project.featured ? "md:col-span-2 lg:col-span-2" : ""}
       onClick={handleCardClick}
     >
       <Card className="h-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-white to-gray-50">

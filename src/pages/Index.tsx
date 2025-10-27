@@ -167,12 +167,10 @@ const Index = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-purple-400 mx-auto mb-8 rounded-full" />
           </motion.div>
 
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-              {projects.map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index} />
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <ProjectCard key={project.id} project={project} index={index} />
+            ))}
           </div>
         </div>
       </section>
