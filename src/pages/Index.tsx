@@ -111,12 +111,12 @@ const Index = () => {
           </motion.div>
           
           <motion.h1 
-            className="text-xl md:text-2xl font-light text-white mb-12"
+            className="text-xl md:text-2xl font-light text-gray-800 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Hi, I'm <span className="font-bold">Palmer</span> — I transform real-world insights into intuitive digital solutions.
+            Hi, I&apos;m <span className="font-bold">Palmer</span> — I transform real-world insights into intuitive digital solutions.
           </motion.h1>
           
           <motion.div
@@ -127,7 +127,7 @@ const Index = () => {
           >
             <Button 
               size="lg" 
-              className="bg-white text-gray-900 hover:bg-white/90 hover:scale-105 transition-all duration-300"
+              className="bg-teal-500 text-white hover:bg-teal-600 hover:scale-105 transition-all duration-300"
               onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work
@@ -136,7 +136,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white bg-transparent hover:bg-white hover:text-gray-900 hover:scale-105 transition-all duration-300"
+              className="border-purple-400 text-purple-600 bg-white/80 hover:bg-purple-100 hover:scale-105 transition-all duration-300"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Get in Touch
@@ -150,7 +150,7 @@ const Index = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <ChevronDown className="w-8 h-8 text-white/70" />
+          <ChevronDown className="w-8 h-8 text-gray-600/70" />
         </motion.div>
       </section>
 
