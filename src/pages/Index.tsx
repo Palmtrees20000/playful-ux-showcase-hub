@@ -52,7 +52,7 @@ const Index = () => {
       title: "MemoryMatters Website Design",
       description: "Creating a compassionate digital platform for memory care and support services.",
       image: "/placeholder.svg",
-      logo: "/placeholder.svg",
+      logo: "/lovable-uploads/mm-logo.png",
       tags: ["Web Design", "UI Design", "Accessibility"],
       link: "/case-study/memory-matters",
       featured: true
