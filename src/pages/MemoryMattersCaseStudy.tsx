@@ -198,7 +198,7 @@ const MemoryMattersCaseStudy = () => {
                           <img 
                             src={image} 
                             alt={`Sketch ${index + 1}`}
-                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                           />
                         </Card>
                       </DialogTrigger>
