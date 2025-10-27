@@ -7,11 +7,14 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 
 const MemoryMattersCaseStudy = () => {
-  const designImages = [
-    "/lovable-uploads/mm-header.png",
-    "/lovable-uploads/mm-grid.jpg",
+  const sketchImages = [
     "/lovable-uploads/mm-wireframes.png",
     "/lovable-uploads/mm-sitemap.png"
+  ];
+
+  const designImages = [
+    "/lovable-uploads/mm-header.png",
+    "/lovable-uploads/mm-grid.jpg"
   ];
 
   const finalDesigns = [
@@ -179,7 +182,44 @@ const MemoryMattersCaseStudy = () => {
                 To start, I <strong>sketched out potential redesigns</strong> and focused on <strong>simplifying the navigation</strong> 
                 by creating a navigation map and improving content hierarchy.
               </p>
+            </CardContent>
+          </Card>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {sketchImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                      <img 
+                        src={image} 
+                        alt={`Sketch ${index + 1}`}
+                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                      />
+                    </Card>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
+                    <div className="relative flex items-center justify-center">
+                      <img 
+                        src={image} 
+                        alt={`Sketch ${index + 1}`}
+                        className="max-w-full max-h-[85vh] object-contain"
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </motion.div>
+            ))}
+          </div>
+
+          <Card className="mb-8 bg-gradient-to-br from-indigo-50 to-blue-50 border-indigo-200">
+            <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-4">Key Design Decisions:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>Adding a <strong>search bar</strong> to improve accessibility</li>
