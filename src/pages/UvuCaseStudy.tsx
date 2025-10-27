@@ -198,29 +198,6 @@ const UvuCaseStudy = () => {
               <p className="text-lg text-gray-600 mb-6">
                 Conducted eye tracking studies to understand user behavior and navigation patterns.
               </p>
-              
-              <div className="mb-6">
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <div className="cursor-pointer hover:opacity-90 transition-opacity">
-                      <img 
-                        src="/lovable-uploads/uvu-eyetracking.png" 
-                        alt="Eye tracking research"
-                        className="w-full rounded-lg shadow-md"
-                      />
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src="/lovable-uploads/uvu-eyetracking.png" 
-                        alt="Eye tracking research"
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </div>
 
               <h3 className="text-xl font-semibold mb-4">Key Takeaways</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
