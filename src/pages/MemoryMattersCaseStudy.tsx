@@ -238,7 +238,7 @@ const MemoryMattersCaseStudy = () => {
                       <img 
                         src={image} 
                         alt={`Sketch ${index + 1}`}
-                        className="w-full h-auto max-h-48 object-contain hover:scale-105 transition-transform duration-300"
+                        className="w-full h-auto max-h-32 object-contain hover:scale-105 transition-transform duration-300"
                       />
                     </Card>
                   </motion.div>
