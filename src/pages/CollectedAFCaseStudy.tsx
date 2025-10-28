@@ -291,7 +291,7 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   The completed admin dashboard interface showing the submission management system with categories, filtering, and action controls.
                 </p>
-                <div className="max-w-xs mx-auto mb-4">
+                <div className="max-w-[250px] mb-4">
                   <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md">
                     <img 
                       src="/lovable-uploads/collectedaf-admin-page-final.png" 
