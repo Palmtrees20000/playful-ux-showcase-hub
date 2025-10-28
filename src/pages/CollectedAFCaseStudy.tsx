@@ -113,7 +113,7 @@ const CollectedAFCaseStudy = () => {
                 <li><strong>Admin dashboard</strong></li>
               </ul>
               
-              <div className="my-6 rounded-lg overflow-hidden border border-red-300">
+              <div className="my-6 rounded-lg overflow-hidden border border-red-300 max-w-md mx-auto">
                 <img 
                   src="/lovable-uploads/collectedaf-existing-page.png" 
                   alt="CollectedAF existing page interface" 
