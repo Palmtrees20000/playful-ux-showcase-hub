@@ -228,7 +228,7 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   Initial wireframe explorations of the admin dashboard, showing various layout approaches and interaction patterns.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex flex-wrap gap-6">
                   <div className="max-w-[250px] mb-4">
                     <div className="rounded-lg overflow-hidden border border-gray-200">
                       <img 
