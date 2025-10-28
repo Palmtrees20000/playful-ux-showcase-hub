@@ -153,6 +153,35 @@ const CollectedAFCaseStudy = () => {
                   "Can you draft a design so I know what it looks like and what you are talking about"
                 </p>
               </div>
+
+              <div className="mt-8 space-y-6">
+                <h3 className="font-semibold text-lg mb-4">Early Sketches & Design Exploration</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="rounded-lg overflow-hidden border border-blue-200">
+                    <img 
+                      src="/lovable-uploads/collectaf-sketch-1.jpg" 
+                      alt="CollectedAF initial wireframe sketches" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-blue-200">
+                    <img 
+                      src="/lovable-uploads/collectaf-sketch-2.jpg" 
+                      alt="CollectedAF admin dashboard sketches" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                <div className="rounded-lg overflow-hidden border border-blue-200 max-w-2xl">
+                  <img 
+                    src="/lovable-uploads/collectaf-admin-ui.png" 
+                    alt="CollectedAF admin interface design" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
             </CardContent>
           </Card>
         </motion.section>
