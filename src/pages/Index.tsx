@@ -64,7 +64,7 @@ const Index = () => {
       image: "/placeholder.svg",
       logo: "/lovable-uploads/collectedaf-logo.png",
       tags: ["UX Design", "Web Design", "Product Design"],
-      link: "#",
+      link: "/case-study/collectedaf",
       featured: true
     },
     {

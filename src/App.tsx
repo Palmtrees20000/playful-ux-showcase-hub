@@ -8,6 +8,7 @@ import AwardcoCaseStudy from "./pages/AwardcoCaseStudy";
 import CraigslistCaseStudy from "./pages/CraigslistCaseStudy";
 import UvuCaseStudy from "./pages/UvuCaseStudy";
 import MemoryMattersCaseStudy from "./pages/MemoryMattersCaseStudy";
+import CollectedAFCaseStudy from "./pages/CollectedAFCaseStudy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/case-study/craigslist" element={<CraigslistCaseStudy />} />
           <Route path="/case-study/uvu" element={<UvuCaseStudy />} />
           <Route path="/case-study/memory-matters" element={<MemoryMattersCaseStudy />} />
+          <Route path="/case-study/collectedaf" element={<CollectedAFCaseStudy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
