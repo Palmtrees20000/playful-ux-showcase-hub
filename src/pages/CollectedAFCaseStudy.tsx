@@ -112,6 +112,15 @@ const CollectedAFCaseStudy = () => {
                 <li><strong>Login page</strong></li>
                 <li><strong>Admin dashboard</strong></li>
               </ul>
+              
+              <div className="my-6 rounded-lg overflow-hidden border border-red-300">
+                <img 
+                  src="/lovable-uploads/collectedaf-existing-page.png" 
+                  alt="CollectedAF existing page interface" 
+                  className="w-full h-auto"
+                />
+              </div>
+              
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
                 The challenge was to design a <strong>cohesive experience</strong> that met the owner's vision within <strong>tight time constraints</strong> and with <strong>limited formal wireframing</strong>. The official CollectedAF page had only the design, summary, and logo with no other content.
               </p>
