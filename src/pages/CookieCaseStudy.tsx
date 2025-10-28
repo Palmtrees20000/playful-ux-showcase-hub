@@ -236,12 +236,12 @@ const CookieCaseStudy = () => {
                 <img 
                   src="/lovable-uploads/cookie-sketch-mobile.jpg" 
                   alt="Mobile sketch without ads"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
                 <img 
                   src="/lovable-uploads/cookie-sketch-desktop.jpg" 
                   alt="Desktop prototype with ads"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
               </div>
 
@@ -250,22 +250,22 @@ const CookieCaseStudy = () => {
                 <img 
                   src="/lovable-uploads/cookie-frame-8.jpg" 
                   alt="Original recipe page header"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
                 <img 
                   src="/lovable-uploads/cookie-ingredients-section.jpg" 
                   alt="Original ingredients section"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
                 <img 
                   src="/lovable-uploads/cookie-recipe-section.jpg" 
                   alt="Original recipe section"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
                 <img 
                   src="/lovable-uploads/cookie-recipe-section-2.jpg" 
                   alt="Original recipe section continued"
-                  className="w-full rounded-lg border border-gray-200"
+                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
                 />
               </div>
             </CardContent>
