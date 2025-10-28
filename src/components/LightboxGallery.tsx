@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 interface LightboxImage {
   src: string;
   alt: string;
+  className?: string;
 }
 
 interface LightboxGalleryProps {
@@ -42,7 +43,7 @@ export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-4"
             key={index}
             src={image.src}
             alt={image.alt}
-            className={`cursor-pointer hover:opacity-80 transition-opacity ${imageClassName}`}
+            className={`cursor-pointer hover:opacity-80 transition-opacity ${imageClassName} ${image.className || ""}`}
             onClick={() => setSelectedIndex(index)}
           />
         ))}

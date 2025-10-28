@@ -245,7 +245,8 @@ const CookieCaseStudy = () => {
                   },
                   {
                     src: "/lovable-uploads/cookie-sketch-3.jpg",
-                    alt: "Cookie recipe rough sketches and ideas"
+                    alt: "Cookie recipe rough sketches and ideas",
+                    className: "rotate-90"
                   }
                 ]}
                 columns="grid-cols-1 md:grid-cols-3"
