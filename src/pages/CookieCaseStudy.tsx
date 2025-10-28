@@ -231,7 +231,7 @@ const CookieCaseStudy = () => {
                 </div>
               </div>
 
-              <h3 className="font-semibold text-lg mb-4">Original Website Sections:</h3>
+              <h3 className="font-semibold text-lg mb-4">Wireframes:</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <img 
                   src="/lovable-uploads/cookie-frame-8.jpg" 
