@@ -214,6 +214,29 @@ const CollectedAFCaseStudy = () => {
                   <p className="text-gray-700">Color contrast and button placement</p>
                 </div>
               </div>
+
+              <div className="mt-8">
+                <h3 className="font-semibold text-lg mb-4">Early Wireframes</h3>
+                <p className="text-gray-600 mb-6">
+                  Initial wireframe explorations of the admin dashboard, showing various layout approaches and interaction patterns.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="rounded-lg overflow-hidden border border-gray-200">
+                    <img 
+                      src="/lovable-uploads/collectaf-wireframe-1.png" 
+                      alt="CollectedAF admin wireframe - collected data view" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-gray-200">
+                    <img 
+                      src="/lovable-uploads/collectaf-wireframe-2.png" 
+                      alt="CollectedAF admin wireframe - category management" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </motion.section>
