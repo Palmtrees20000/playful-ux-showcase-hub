@@ -341,7 +341,7 @@ const CookieCaseStudy = () => {
                   }
                 ]}
                 columns="grid-cols-1 md:grid-cols-2"
-                imageClassName="w-full object-contain rounded-lg border border-gray-200"
+                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
               />
             </CardContent>
           </Card>
