@@ -332,7 +332,7 @@ const CookieCaseStudy = () => {
               <LightboxGallery
                 images={[
                   {
-                    src: "/lovable-uploads/cookie-sketch-mobile.jpg",
+                    src: "/lovable-uploads/cookie-final-mobile.png",
                     alt: "Mobile prototype without ads"
                   },
                   {
