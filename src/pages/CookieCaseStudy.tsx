@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import { LightboxGallery } from "@/components/LightboxGallery";
 
 const CookieCaseStudy = () => {
   return (
@@ -232,42 +233,44 @@ const CookieCaseStudy = () => {
               </div>
 
               <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <img 
-                  src="/lovable-uploads/cookie-sketch-mobile.jpg" 
-                  alt="Mobile sketch without ads"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-                <img 
-                  src="/lovable-uploads/cookie-sketch-desktop.jpg" 
-                  alt="Desktop prototype with ads"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-              </div>
+              <LightboxGallery
+                images={[
+                  {
+                    src: "/lovable-uploads/cookie-sketch-mobile.jpg",
+                    alt: "Mobile sketch without ads"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-desktop.jpg",
+                    alt: "Desktop prototype with ads"
+                  }
+                ]}
+                columns="grid-cols-1 md:grid-cols-2"
+                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
+              />
 
-              <h3 className="font-semibold text-lg mb-4">Wireframes:</h3>
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <img 
-                  src="/lovable-uploads/cookie-frame-8.jpg" 
-                  alt="Original recipe page header"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-                <img 
-                  src="/lovable-uploads/cookie-ingredients-section.jpg" 
-                  alt="Original ingredients section"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-                <img 
-                  src="/lovable-uploads/cookie-recipe-section.jpg" 
-                  alt="Original recipe section"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-                <img 
-                  src="/lovable-uploads/cookie-recipe-section-2.jpg" 
-                  alt="Original recipe section continued"
-                  className="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-                />
-              </div>
+              <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
+              <LightboxGallery
+                images={[
+                  {
+                    src: "/lovable-uploads/cookie-frame-8.jpg",
+                    alt: "Original recipe page header"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-ingredients-section.jpg",
+                    alt: "Original ingredients section"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-recipe-section.jpg",
+                    alt: "Original recipe section"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-recipe-section-2.jpg",
+                    alt: "Original recipe section continued"
+                  }
+                ]}
+                columns="grid-cols-1 md:grid-cols-4"
+                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
+              />
             </CardContent>
           </Card>
         </motion.section>
