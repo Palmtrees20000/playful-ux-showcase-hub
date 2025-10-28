@@ -230,6 +230,30 @@ const CookieCaseStudy = () => {
                   <p className="text-gray-700">Maintain room for affiliate integration without overwhelming content</p>
                 </div>
               </div>
+
+              <h3 className="font-semibold text-lg mb-4">Original Website Sections:</h3>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <img 
+                  src="/lovable-uploads/cookie-frame-8.jpg" 
+                  alt="Original recipe page header"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+                <img 
+                  src="/lovable-uploads/cookie-ingredients-section.jpg" 
+                  alt="Original ingredients section"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+                <img 
+                  src="/lovable-uploads/cookie-recipe-section.jpg" 
+                  alt="Original recipe section"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+                <img 
+                  src="/lovable-uploads/cookie-recipe-section-2.jpg" 
+                  alt="Original recipe section continued"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+              </div>
             </CardContent>
           </Card>
         </motion.section>
