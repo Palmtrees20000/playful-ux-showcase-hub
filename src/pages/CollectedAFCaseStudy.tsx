@@ -285,6 +285,22 @@ const CollectedAFCaseStudy = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-8">
+                <h3 className="font-semibold text-lg mb-4">Final Admin Dashboard Design</h3>
+                <p className="text-gray-600 mb-6">
+                  The completed admin dashboard interface showing the submission management system with categories, filtering, and action controls.
+                </p>
+                <div className="max-w-3xl mx-auto">
+                  <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md">
+                    <img 
+                      src="/lovable-uploads/collectedaf-admin-page-final.png" 
+                      alt="CollectedAF final admin dashboard design" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </motion.section>
