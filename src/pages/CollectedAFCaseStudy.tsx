@@ -229,7 +229,7 @@ const CollectedAFCaseStudy = () => {
                   Initial wireframe explorations of the admin dashboard, showing various layout approaches and interaction patterns.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="max-w-sm mx-auto mb-4">
+                  <div className="max-w-[250px] mb-4">
                     <div className="rounded-lg overflow-hidden border border-gray-200">
                       <img 
                         src="/lovable-uploads/collectaf-wireframe-1.png" 
@@ -238,7 +238,7 @@ const CollectedAFCaseStudy = () => {
                       />
                     </div>
                   </div>
-                  <div className="max-w-sm mx-auto mb-4">
+                  <div className="max-w-[250px] mb-4">
                     <div className="rounded-lg overflow-hidden border border-gray-200">
                       <img 
                         src="/lovable-uploads/collectaf-wireframe-2.png" 
