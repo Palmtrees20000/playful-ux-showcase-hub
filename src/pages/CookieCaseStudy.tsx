@@ -231,6 +231,20 @@ const CookieCaseStudy = () => {
                 </div>
               </div>
 
+              <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <img 
+                  src="/lovable-uploads/cookie-sketch-mobile.jpg" 
+                  alt="Mobile sketch without ads"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+                <img 
+                  src="/lovable-uploads/cookie-sketch-desktop.jpg" 
+                  alt="Desktop prototype with ads"
+                  className="w-full rounded-lg border border-gray-200"
+                />
+              </div>
+
               <h3 className="font-semibold text-lg mb-4">Wireframes:</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <img 
