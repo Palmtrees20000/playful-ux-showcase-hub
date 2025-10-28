@@ -248,7 +248,7 @@ const CookieCaseStudy = () => {
                     alt: "Cookie recipe rough sketches and ideas"
                   }
                 ]}
-                columns="grid-cols-2 md:grid-cols-2"
+                columns="grid-cols-1 md:grid-cols-3"
                 imageClassName="w-full h-[250px] object-cover rounded-lg border border-gray-200"
               />
 
