@@ -232,7 +232,27 @@ const CookieCaseStudy = () => {
                 </div>
               </div>
 
-              <h3 className="font-semibold text-lg mb-4">Wireframes:</h3>
+              <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
+              <LightboxGallery
+                images={[
+                  {
+                    src: "/lovable-uploads/cookie-sketch-1.jpg",
+                    alt: "Cookie recipe sketch 1"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-2.jpg",
+                    alt: "Cookie recipe sketch 2"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-3.jpg",
+                    alt: "Cookie recipe rough sketches and ideas"
+                  }
+                ]}
+                columns="grid-cols-2 md:grid-cols-2"
+                imageClassName="w-full h-[250px] object-cover rounded-lg border border-gray-200"
+              />
+
+              <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
               <LightboxGallery
                 images={[
                   {
