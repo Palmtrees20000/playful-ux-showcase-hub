@@ -232,23 +232,7 @@ const CookieCaseStudy = () => {
                 </div>
               </div>
 
-              <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
-              <LightboxGallery
-                images={[
-                  {
-                    src: "/lovable-uploads/cookie-sketch-mobile.jpg",
-                    alt: "Mobile sketch without ads"
-                  },
-                  {
-                    src: "/lovable-uploads/cookie-sketch-desktop.jpg",
-                    alt: "Desktop prototype with ads"
-                  }
-                ]}
-                columns="grid-cols-1 md:grid-cols-2"
-                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
-              />
-
-              <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
+              <h3 className="font-semibold text-lg mb-4">Wireframes:</h3>
               <LightboxGallery
                 images={[
                   {
@@ -318,9 +302,25 @@ const CookieCaseStudy = () => {
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Testing was done <strong>informally</strong> through participant observation and interviews. I evaluated how quickly users could locate and print the recipe, noting confusion points and emotional reactions (frustration with ads, difficulty scrolling, etc.).
               </p>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg leading-relaxed text-gray-700 mb-8">
                 But after some critiques I received, I designed the <strong>final prototypes</strong>.
               </p>
+
+              <h3 className="font-semibold text-lg mb-4">Final Prototypes:</h3>
+              <LightboxGallery
+                images={[
+                  {
+                    src: "/lovable-uploads/cookie-sketch-mobile.jpg",
+                    alt: "Mobile prototype without ads"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-desktop.jpg",
+                    alt: "Desktop prototype with ads"
+                  }
+                ]}
+                columns="grid-cols-1 md:grid-cols-2"
+                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
+              />
             </CardContent>
           </Card>
         </motion.section>
