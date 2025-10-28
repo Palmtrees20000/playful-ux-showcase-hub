@@ -74,7 +74,7 @@ const Index = () => {
       image: "/placeholder.svg",
       logo: "/lovable-uploads/joy-food-sunshine-logo.png",
       tags: ["UI Design", "Web Design", "Visual Design"],
-      link: "#",
+      link: "/case-study/cookie-recipe",
       featured: true
     }
   ];
