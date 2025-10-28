@@ -106,14 +106,14 @@ const CollectedAFCaseStudy = () => {
           <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                CollectedAF needed a functional and user-friendly website that included:
+                CollectedAF needed a <strong>functional</strong> and <strong>user-friendly website</strong> that included:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6 ml-4">
-                <li>Login page</li>
-                <li>Admin dashboard</li>
+                <li><strong>Login page</strong></li>
+                <li><strong>Admin dashboard</strong></li>
               </ul>
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                The challenge was to design a cohesive experience that met the owner's vision within tight time constraints and with limited formal wireframing. The official CollectedAF page had only the design, summary, and logo with no other content.
+                The challenge was to design a <strong>cohesive experience</strong> that met the owner's vision within <strong>tight time constraints</strong> and with <strong>limited formal wireframing</strong>. The official CollectedAF page had only the design, summary, and logo with no other content.
               </p>
             </CardContent>
           </Card>
@@ -131,10 +131,10 @@ const CollectedAFCaseStudy = () => {
           <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                We began by discussing the brand's goals, desired features, and target audience with the owner. These meetings helped clarify layout priorities and user flow expectations.
+                We began by discussing the <strong>brand's goals</strong>, <strong>desired features</strong>, and <strong>target audience</strong> with the owner. These meetings helped clarify layout priorities and user flow expectations.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                Though understanding the vision was hard at first, I sketched interface ideas and used AI tools to explore different structure options that balanced visual hierarchy and usability.
+                Though understanding the vision was hard at first, I sketched interface ideas and used <strong>AI tools</strong> to explore different structure options that balanced <strong>visual hierarchy</strong> and <strong>usability</strong>.
               </p>
               <div className="bg-white/50 p-4 rounded-lg border border-blue-200 mt-6">
                 <p className="text-gray-600 italic">
@@ -160,7 +160,7 @@ const CollectedAFCaseStudy = () => {
           <Card>
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                The design phase focused on simplicity, accessibility, and intuitive navigation. I created and refined mobile app layouts that emphasized clarity and user needs, ensuring seamless transitions between login, admin, and main pages.
+                The design phase focused on <strong>simplicity</strong>, <strong>accessibility</strong>, and <strong>intuitive navigation</strong>. I created and refined mobile app layouts that emphasized clarity and user needs, ensuring seamless transitions between login, admin, and main pages.
               </p>
               <h3 className="font-semibold text-lg mb-4">Key Design Focuses:</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -193,28 +193,28 @@ const CollectedAFCaseStudy = () => {
           <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                One of the biggest challenges was how to visualize what the project owner was wanting, finding time and references that had the same idea, and sketching out ideas.
+                One of the biggest challenges was how to <strong>visualize what the project owner was wanting</strong>, finding time and references that had the same idea, and sketching out ideas.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-700">Limited time for full UX documentation and usability testing</p>
+                  <p className="text-gray-700"><strong>Limited time</strong> for full UX documentation and usability testing</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-700">Irregular team communication and project pauses</p>
+                  <p className="text-gray-700"><strong>Irregular team communication</strong> and project pauses</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-700">Balancing mentorship feedback with practical design execution</p>
+                  <p className="text-gray-700"><strong>Balancing mentorship feedback</strong> with practical design execution</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-gray-700">Aligning visual design with back-end development constraints</p>
+                  <p className="text-gray-700"><strong>Aligning visual design</strong> with back-end development constraints</p>
                 </div>
               </div>
               <p className="text-lg leading-relaxed text-gray-700 mt-6">
-                Ultimately, AI helped organize the idea and put the idea to life.
+                Ultimately, <strong>AI helped organize the idea</strong> and put the idea to life.
               </p>
             </CardContent>
           </Card>
@@ -232,10 +232,10 @@ const CollectedAFCaseStudy = () => {
           <Card>
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                While the project did not reach formal usability testing, I gathered informal feedback and suggestions from the team. This iterative feedback loop helped refine the visual hierarchy and improve the overall user flow.
+                While the project did not reach formal usability testing, I gathered <strong>informal feedback</strong> and suggestions from the team. This <strong>iterative feedback loop</strong> helped refine the visual hierarchy and improve the overall user flow.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                Overall, the testing focused on whether the developers could code it and have the basic functions of a login page and the admin page working properly.
+                Overall, the testing focused on whether the developers could code it and have the <strong>basic functions of a login page and the admin page</strong> working properly.
               </p>
             </CardContent>
           </Card>
@@ -282,25 +282,25 @@ const CollectedAFCaseStudy = () => {
           <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Even though the project's continuation remains uncertain, CollectedAF provided valuable experiences in cross-functional collaboration, real-world project communication, and UX problem-solving.
+                Even though the project's continuation remains uncertain, CollectedAF provided valuable experiences in <strong>cross-functional collaboration</strong>, <strong>real-world project communication</strong>, and <strong>UX problem-solving</strong>.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                It strengthened my ability to balance user needs with business goals and revealed the value of Figma starter kits for maintaining design consistency and efficiency in future projects.
+                It strengthened my ability to <strong>balance user needs with business goals</strong> and revealed the value of <strong>Figma starter kits</strong> for maintaining design consistency and efficiency in future projects.
               </p>
               <div className="bg-white/50 p-6 rounded-lg border border-purple-200">
                 <h3 className="font-semibold text-lg mb-3">Key Takeaways</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-3">
                     <Lightbulb className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Cross-functional collaboration strengthens design outcomes</span>
+                    <span><strong>Cross-functional collaboration</strong> strengthens design outcomes</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Lightbulb className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Real-world communication requires adaptability and clarity</span>
+                    <span><strong>Real-world communication</strong> requires adaptability and clarity</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Lightbulb className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Design systems and starter kits improve consistency and efficiency</span>
+                    <span><strong>Design systems and starter kits</strong> improve consistency and efficiency</span>
                   </li>
                 </ul>
               </div>
