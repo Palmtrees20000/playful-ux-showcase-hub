@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { LightboxGallery, SingleImageLightbox } from "@/components/LightboxGallery";
 import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
+import { CaseStudyHeader } from "@/components/CaseStudyHeader";
 
 const UvuCaseStudy = () => {
   const personaImages = [
@@ -29,16 +30,7 @@ const UvuCaseStudy = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="border-b bg-white/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center gap-4">
-          <Link to="/">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Portfolio
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <CaseStudyHeader currentPath="/case-study/uvu" />
 
       <div className="max-w-4xl mx-auto px-6 py-12">
         {/* Hero Section */}

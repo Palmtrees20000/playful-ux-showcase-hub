@@ -7,25 +7,13 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { LightboxGallery } from "@/components/LightboxGallery";
 import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
+import { CaseStudyHeader } from "@/components/CaseStudyHeader";
 
 const CraigslistCaseStudy = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <Button
-            variant="ghost"
-            onClick={() => navigate("/")}
-            className="flex items-center gap-2 text-purple-600 hover:text-purple-700"
-          >
-            <ArrowLeft size={20} />
-            Back to Portfolio
-          </Button>
-        </div>
-      </nav>
+      <CaseStudyHeader currentPath="/case-study/craigslist" />
 
       <div className="pt-20 pb-16">
         <div className="max-w-6xl mx-auto px-6">
