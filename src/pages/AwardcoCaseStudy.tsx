@@ -60,7 +60,7 @@ const AwardcoCaseStudy = () => {
           </h1>
           
           <p className="text-lg font-bold text-gray-700 mb-6">
-            Due to a signed NDA, I'm only able to share limited project details — but here's what I can show!
+            Due to a signed NDA, I&apos;m only able to share limited project details — but here&apos;s what I can show!
           </p>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">

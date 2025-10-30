@@ -32,7 +32,7 @@ const Resume = () => {
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Here's my full resume — you can view it below or download a PDF version.
+              Here&apos;s my full resume — you can view it below or download a PDF version.
             </p>
             
             <Button 

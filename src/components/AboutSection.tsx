@@ -93,7 +93,7 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-gray-900">
-              Hi! I'm Palmer Charles
+              Hi! I&apos;m Palmer Charles
             </h3>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
@@ -110,7 +110,7 @@ const AboutSection = () => {
               <p>
                 What I love most about UX is the process of iterating, brainstorming, and exploring 
                 new design solutions. Each challenge pushes me to think critically and creatively — 
-                whether I'm sketching wireframes, testing prototypes, or reworking a layout based on feedback.
+                whether I&apos;m sketching wireframes, testing prototypes, or reworking a layout based on feedback.
               </p>
             </div>
           </motion.div>

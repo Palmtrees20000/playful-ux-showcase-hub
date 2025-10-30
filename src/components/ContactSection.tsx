@@ -59,11 +59,11 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-purple-400 mx-auto mb-8 rounded-full" />
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            I'm always learning, always curious, and always looking for new ways to design 
+            I&apos;m always learning, always curious, and always looking for new ways to design 
             experiences that feel natural, meaningful, and human.
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold mb-6 flex items-center">
                   <MessageCircle className="mr-3 text-purple-500" />
-                  Let's Chat
+                  Let&apos;s Chat
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -139,7 +139,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Whether you have a project in mind, want to collaborate, or just want to chat 
-                about UX design, I'd love to hear from you!
+                about UX design, I&apos;d love to hear from you!
               </p>
             </div>
 
@@ -179,7 +179,7 @@ const ContactSection = () => {
               viewport={{ once: true }}
               className="p-6 bg-gradient-to-r from-teal-50 to-purple-50 rounded-xl border border-purple-100"
             >
-              <h4 className="font-bold text-gray-900 mb-2">Fast Replies, Friendly Vibes 😄</h4>
+              <h4 className="font-bold text-gray-900 mb-2">Quick Responses & Friendly Conversations</h4>
               <p className="text-sm text-gray-600">
                 I typically respond to messages within 24 hours. Looking forward to connecting with you!
               </p>
