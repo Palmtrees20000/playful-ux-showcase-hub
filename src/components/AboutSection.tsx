@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Lightbulb, Users, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Heart, Lightbulb, Users, Target, FileText, Download } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
@@ -170,6 +171,45 @@ const AboutSection = () => {
                 </Badge>
               </motion.div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* Resume CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mt-20 pt-12 border-t border-gray-200"
+        >
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            Want to see my full resume?
+          </h3>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            You can view it here or download a copy below.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              asChild 
+              size="lg"
+              className="bg-gradient-to-r from-teal-600 to-purple-600 hover:from-teal-700 hover:to-purple-700 text-white px-8"
+            >
+              <a href="/resume">
+                <FileText className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
+            </Button>
+            <Button 
+              asChild 
+              variant="outline" 
+              size="lg"
+              className="border-purple-300 text-purple-700 hover:bg-purple-50 px-8"
+            >
+              <a href="/resume/palmer-resume.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download PDF
+              </a>
+            </Button>
           </div>
         </motion.div>
       </div>
