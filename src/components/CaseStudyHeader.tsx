@@ -45,8 +45,8 @@ export const CaseStudyHeader = ({ currentPath }: CaseStudyHeaderProps) => {
         
         <Button 
           onClick={handleNextClick}
+          variant="ghost"
           size="sm"
-          className="bg-gradient-to-r from-teal-600 to-purple-600 text-white hover:from-teal-700 hover:to-purple-700"
         >
           Read Next Case Study
           <ArrowRight className="w-4 h-4 ml-2" />
