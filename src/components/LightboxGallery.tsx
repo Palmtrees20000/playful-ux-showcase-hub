@@ -15,7 +15,7 @@ interface LightboxGalleryProps {
   imageClassName?: string;
 }
 
-export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-4", imageClassName = "" }: LightboxGalleryProps) => {
+export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-2 lg:grid-cols-4", imageClassName = "" }: LightboxGalleryProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const handlePrevious = () => {
@@ -37,13 +37,13 @@ export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-4"
 
   return (
     <>
-      <div className={`grid ${columns} gap-4`}>
+      <div className={`grid ${columns} gap-6`}>
         {images.map((image, index) => (
           <img
             key={index}
             src={image.src}
             alt={image.alt}
-            className={`cursor-pointer hover:opacity-80 transition-opacity ${imageClassName} ${image.className || ""}`}
+            className={`portfolio-image portfolio-image-hover portfolio-image-standard ${imageClassName} ${image.className || ""}`}
             onClick={() => setSelectedIndex(index)}
           />
         ))}

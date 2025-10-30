@@ -107,37 +107,28 @@ const CraigslistCaseStudy = () => {
             <Card className="border-purple-200 shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Early Ideation</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-4">Initial Sketches</h3>
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img src="/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png" alt="Initial sketches and ideas" className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity" />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-xl">
-                        <img src="/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png" alt="Initial sketches and ideas" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
+                    <img 
+                      src="/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png" 
+                      alt="Initial sketches and ideas" 
+                      className="portfolio-image portfolio-image-standard"
+                    />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-4">Mood Board & Current State</h3>
-                    <div className="space-y-4">
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <img src="/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png" alt="Mood board 1 - Current Craigslist mobile app screenshots" className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity" />
-                        </DialogTrigger>
-                        <DialogContent className="max-w-xl">
-                          <img src="/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png" alt="Mood board 1 - Current Craigslist mobile app screenshots" className="w-full h-auto" />
-                        </DialogContent>
-                      </Dialog>
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <img src="/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png" alt="Mood board 2 - Current Craigslist mobile app screenshots" className="w-full rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity" />
-                        </DialogTrigger>
-                        <DialogContent className="max-w-xl">
-                          <img src="/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png" alt="Mood board 2 - Current Craigslist mobile app screenshots" className="w-full h-auto" />
-                        </DialogContent>
-                      </Dialog>
+                    <div className="grid grid-cols-1 gap-6">
+                      <img 
+                        src="/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png" 
+                        alt="Mood board 1 - Current Craigslist mobile app screenshots" 
+                        className="portfolio-image portfolio-image-standard"
+                      />
+                      <img 
+                        src="/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png" 
+                        alt="Mood board 2 - Current Craigslist mobile app screenshots" 
+                        className="portfolio-image portfolio-image-standard"
+                      />
                     </div>
                   </div>
                 </div>
@@ -230,132 +221,56 @@ const CraigslistCaseStudy = () => {
                 
                 {/* High-fidelity screens grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png" 
-                          alt="Home Screen - For Sale Near You" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png" alt="Home Screen - For Sale Near You" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" 
-                          alt="Search Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" alt="Search Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" 
-                          alt="Search Results - Car Parts" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" alt="Search Results - Car Parts" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png" 
-                          alt="Create a Post" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png" alt="Create a Post" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png" 
-                          alt="Messages Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png" alt="Messages Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png" 
-                          alt="Notifications Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-sm">
-                        <img src="/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png" alt="Notifications Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png" 
-                          alt="Favorites Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-lg">
-                        <img src="/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png" alt="Favorites Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png" 
-                          alt="Account Profile Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-lg">
-                        <img src="/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png" alt="Account Profile Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-4 aspect-[9/16] flex items-center justify-center">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <img 
-                          src="/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png" 
-                          alt="Settings Screen" 
-                          className="w-full h-full object-contain rounded-lg shadow-md cursor-pointer hover:opacity-80 transition-opacity"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="max-w-lg">
-                        <img src="/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png" alt="Settings Screen" className="w-full h-auto" />
-                      </DialogContent>
-                    </Dialog>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png" 
+                    alt="Home Screen - For Sale Near You" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" 
+                    alt="Search Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" 
+                    alt="Search Results - Car Parts" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png" 
+                    alt="Create a Post" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png" 
+                    alt="Messages Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png" 
+                    alt="Notifications Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png" 
+                    alt="Favorites Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/0834fe85-1559-4034-b19b-9e005735f2e7.png" 
+                    alt="Profile Settings" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png" 
+                    alt="Account Profile Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png" 
+                    alt="Settings Screen" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
                 </div>
               </CardContent>
             </Card>

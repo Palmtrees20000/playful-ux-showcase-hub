@@ -231,16 +231,12 @@ const MemoryMattersCaseStudy = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <Card 
-                      className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                    <img 
+                      src={image} 
+                      alt={`Sketch ${index + 1}`}
+                      className="portfolio-image portfolio-image-hover portfolio-image-wide"
                       onClick={() => openSketchGallery(index)}
-                    >
-                      <img 
-                        src={image} 
-                        alt={`Sketch ${index + 1}`}
-                        className="w-full h-auto max-h-32 object-contain hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
+                    />
                   </motion.div>
                 ))}
               </div>
@@ -265,16 +261,12 @@ const MemoryMattersCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
-                  className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                <img 
+                  src={image} 
+                  alt={`Design ${index + 1}`}
+                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
                   onClick={() => openDesignGallery(index)}
-                >
-                  <img 
-                    src={image} 
-                    alt={`Design ${index + 1}`}
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </Card>
+                />
               </motion.div>
             ))}
           </div>
@@ -362,16 +354,12 @@ const MemoryMattersCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
-                  className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+                <img 
+                  src={image} 
+                  alt={`Final design ${index + 1}`}
+                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
                   onClick={() => openFinalGallery(index)}
-                >
-                  <img 
-                    src={image} 
-                    alt={`Final design ${index + 1}`}
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </Card>
+                />
               </motion.div>
             ))}
           </div>

@@ -113,14 +113,12 @@ const CollectedAFCaseStudy = () => {
                 <li><strong>Admin dashboard</strong></li>
               </ul>
               
-              <div className="max-w-sm mx-auto mb-4">
-                <div className="my-6 rounded-lg overflow-hidden border border-red-300">
-                  <img 
-                    src="/lovable-uploads/collectedaf-existing-page.png" 
-                    alt="CollectedAF existing page interface" 
-                    className="w-full h-auto"
-                  />
-                </div>
+              <div className="max-w-sm mx-auto mb-8">
+                <img 
+                  src="/lovable-uploads/collectedaf-existing-page.png" 
+                  alt="CollectedAF existing page interface" 
+                  className="portfolio-image portfolio-image-standard"
+                />
               </div>
               
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -159,34 +157,22 @@ const CollectedAFCaseStudy = () => {
               <div className="mt-8 space-y-6">
                 <h3 className="font-semibold text-lg mb-4">Early Sketches & Design Exploration</h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-blue-200">
-                      <img 
-                        src="/lovable-uploads/collectaf-sketch-1.jpg" 
-                        alt="CollectedAF initial wireframe sketches" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-blue-200">
-                      <img 
-                        src="/lovable-uploads/collectaf-sketch-2.jpg" 
-                        alt="CollectedAF admin dashboard sketches" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-blue-200">
-                      <img 
-                        src="/lovable-uploads/collectaf-admin-ui.png" 
-                        alt="CollectedAF admin interface design" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <img 
+                    src="/lovable-uploads/collectaf-sketch-1.jpg" 
+                    alt="CollectedAF initial wireframe sketches" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/collectaf-sketch-2.jpg" 
+                    alt="CollectedAF admin dashboard sketches" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/collectaf-admin-ui.png" 
+                    alt="CollectedAF admin interface design" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
                 </div>
               </div>
             </CardContent>
@@ -228,25 +214,17 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   Initial wireframe explorations of the admin dashboard, showing various layout approaches and interaction patterns.
                 </p>
-                <div className="flex flex-wrap gap-6">
-                  <div className="max-w-[250px] mb-4">
-                    <div className="rounded-lg overflow-hidden border border-gray-200">
-                      <img 
-                        src="/lovable-uploads/collectaf-wireframe-1.png" 
-                        alt="CollectedAF admin wireframe - collected data view" 
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-w-[250px] mb-4">
-                    <div className="rounded-lg overflow-hidden border border-gray-200">
-                      <img 
-                        src="/lovable-uploads/collectaf-wireframe-2.png" 
-                        alt="CollectedAF admin wireframe - category management" 
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <img 
+                    src="/lovable-uploads/collectaf-wireframe-1.png" 
+                    alt="CollectedAF admin wireframe - collected data view" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/collectaf-wireframe-2.png" 
+                    alt="CollectedAF admin wireframe - category management" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
                 </div>
               </div>
 
@@ -255,34 +233,22 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   Various states of the login page including error handling and developer-ready designs.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-gray-200">
-                      <img 
-                        src="/lovable-uploads/collectedaf-sign-in-dev-ready.png" 
-                        alt="CollectedAF sign-in page - dev ready" 
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-gray-200">
-                      <img 
-                        src="/lovable-uploads/collectedaf-error-sign-in-1.png" 
-                        alt="CollectedAF sign-in - error state password" 
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-w-sm mx-auto mb-4">
-                    <div className="rounded-lg overflow-hidden border border-gray-200">
-                      <img 
-                        src="/lovable-uploads/collectedaf-error-sign-in.png" 
-                        alt="CollectedAF sign-in - error state username" 
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <img 
+                    src="/lovable-uploads/collectedaf-sign-in-dev-ready.png" 
+                    alt="CollectedAF sign-in page - dev ready" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/collectedaf-error-sign-in-1.png" 
+                    alt="CollectedAF sign-in - error state password" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
+                  <img 
+                    src="/lovable-uploads/collectedaf-error-sign-in.png" 
+                    alt="CollectedAF sign-in - error state username" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
                 </div>
               </div>
 
@@ -291,14 +257,12 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   The completed admin dashboard interface showing the submission management system with categories, filtering, and action controls.
                 </p>
-                <div className="max-w-[250px] mb-4">
-                  <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md">
-                    <img 
-                      src="/lovable-uploads/collectedaf-admin-page-final.png" 
-                      alt="CollectedAF final admin dashboard design" 
-                      className="w-full h-auto"
-                    />
-                  </div>
+                <div className="max-w-sm mx-auto">
+                  <img 
+                    src="/lovable-uploads/collectedaf-admin-page-final.png" 
+                    alt="CollectedAF final admin dashboard design" 
+                    className="portfolio-image portfolio-image-standard"
+                  />
                 </div>
               </div>
             </CardContent>

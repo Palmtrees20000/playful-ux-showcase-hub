@@ -250,8 +250,7 @@ const CookieCaseStudy = () => {
                     alt: "Cookie recipe rough sketches and ideas"
                   }
                 ]}
-                columns="grid-cols-1 md:grid-cols-3"
-                imageClassName="w-full h-[250px] object-cover rounded-lg border border-gray-200"
+                columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
               />
 
               <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
@@ -274,8 +273,7 @@ const CookieCaseStudy = () => {
                     alt: "Original recipe section continued"
                   }
                 ]}
-                columns="grid-cols-1 md:grid-cols-4"
-                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
+                columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
               />
             </CardContent>
           </Card>
@@ -341,7 +339,6 @@ const CookieCaseStudy = () => {
                   }
                 ]}
                 columns="grid-cols-1 md:grid-cols-2"
-                imageClassName="w-full h-[400px] object-cover rounded-lg border border-gray-200"
               />
             </CardContent>
           </Card>

@@ -156,28 +156,12 @@ const AwardcoCaseStudy = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group"
               >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                      <img 
-                        src={image} 
-                        alt={`Design process ${index + 1}`}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Design process ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                <img 
+                  src={image} 
+                  alt={`Design process ${index + 1}`}
+                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
+                />
               </motion.div>
             ))}
           </div>
@@ -256,26 +240,11 @@ const AwardcoCaseStudy = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Final design ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Final design ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
+                <img 
+                  src={image} 
+                  alt={`Final design ${index + 1}`}
+                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
+                />
               </motion.div>
             ))}
           </div>

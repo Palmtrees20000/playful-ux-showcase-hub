@@ -138,13 +138,11 @@ const UvuCaseStudy = () => {
               >
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
-                      <img 
-                        src={image} 
-                        alt={`Persona ${index + 1}`}
-                        className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
+                    <img 
+                      src={image} 
+                      alt={`Persona ${index + 1}`}
+                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
+                    />
                   </DialogTrigger>
                   <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
                     <div className="relative flex items-center justify-center">
@@ -285,13 +283,11 @@ const UvuCaseStudy = () => {
               >
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Wireframe ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
+                    <img 
+                      src={image} 
+                      alt={`Wireframe ${index + 1}`}
+                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
+                    />
                   </DialogTrigger>
                   <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
                     <div className="relative flex items-center justify-center">
@@ -348,13 +344,11 @@ const UvuCaseStudy = () => {
               >
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                      <img 
-                        src={image} 
-                        alt={`Surface comp ${index + 1}`}
-                        className="w-full h-auto hover:scale-105 transition-transform duration-300"
-                      />
-                    </Card>
+                    <img 
+                      src={image} 
+                      alt={`Surface comp ${index + 1}`}
+                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
+                    />
                   </DialogTrigger>
                   <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
                     <div className="relative flex items-center justify-center">
