@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LightboxGallery } from "@/components/LightboxGallery";
+import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
 
 const AwardcoCaseStudy = () => {
   const processImages = [
@@ -328,20 +329,8 @@ const AwardcoCaseStudy = () => {
           </Card>
         </motion.section>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <Link to="/">
-            <Button size="lg" className="bg-gradient-to-r from-teal-600 to-purple-600 hover:from-teal-700 hover:to-purple-700">
-              View More Projects
-            </Button>
-          </Link>
-        </motion.div>
+        {/* Navigation */}
+        <CaseStudyNavigation currentPath="/case-study/awardco" />
       </div>
     </div>
   );

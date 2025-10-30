@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { LightboxGallery, SingleImageLightbox } from "@/components/LightboxGallery";
+import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
 
 const UvuCaseStudy = () => {
   const personaImages = [
@@ -352,14 +353,7 @@ const UvuCaseStudy = () => {
         </motion.section>
 
         {/* Navigation */}
-        <div className="flex justify-center pt-8 border-t">
-          <Link to="/">
-            <Button variant="outline" size="lg">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Portfolio
-            </Button>
-          </Link>
-        </div>
+        <CaseStudyNavigation currentPath="/case-study/uvu" />
       </div>
     </div>
   );

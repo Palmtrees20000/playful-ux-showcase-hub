@@ -7,6 +7,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LightboxGallery, SingleImageLightbox } from "@/components/LightboxGallery";
+import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
 
 const MemoryMattersCaseStudy = () => {
   const [sketchGalleryOpen, setSketchGalleryOpen] = useState(false);
@@ -349,14 +350,7 @@ const MemoryMattersCaseStudy = () => {
         </motion.section>
 
         {/* Navigation */}
-        <div className="flex justify-center pt-8 border-t">
-          <Link to="/">
-            <Button variant="outline" size="lg">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Portfolio
-            </Button>
-          </Link>
-        </div>
+        <CaseStudyNavigation currentPath="/case-study/memory-matters" />
       </div>
 
       {/* Sketch Gallery */}

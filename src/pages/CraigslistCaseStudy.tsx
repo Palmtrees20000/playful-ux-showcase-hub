@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { LightboxGallery } from "@/components/LightboxGallery";
+import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
 
 const CraigslistCaseStudy = () => {
   const navigate = useNavigate();
@@ -296,19 +297,7 @@ const CraigslistCaseStudy = () => {
           </motion.div>
 
           {/* Back to Portfolio */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            className="text-center"
-          >
-            <Button
-              onClick={() => navigate("/")}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3"
-            >
-              ← Back to Portfolio
-            </Button>
-          </motion.div>
+          <CaseStudyNavigation currentPath="/case-study/craigslist" />
         </div>
       </div>
     </div>

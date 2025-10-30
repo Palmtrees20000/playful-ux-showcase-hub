@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { LightboxGallery } from "@/components/LightboxGallery";
+import { CaseStudyNavigation } from "@/components/CaseStudyNavigation";
 
 const CookieCaseStudy = () => {
   return (
@@ -400,15 +401,8 @@ const CookieCaseStudy = () => {
           </Card>
         </motion.section>
 
-        {/* Back to Portfolio */}
-        <div className="text-center">
-          <Link to="/">
-            <Button size="lg" className="bg-gradient-to-r from-teal-600 to-purple-600 text-white hover:opacity-90">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Portfolio
-            </Button>
-          </Link>
-        </div>
+        {/* Navigation */}
+        <CaseStudyNavigation currentPath="/case-study/cookie-recipe" />
       </div>
     </div>
   );
