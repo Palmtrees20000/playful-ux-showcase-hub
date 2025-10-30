@@ -212,7 +212,6 @@ const CraigslistCaseStudy = () => {
                     { src: "/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png", alt: "Messages Screen" },
                     { src: "/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png", alt: "Notifications Screen" },
                     { src: "/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png", alt: "Favorites Screen" },
-                    { src: "/lovable-uploads/0834fe85-1559-4034-b19b-9e005735f2e7.png", alt: "Profile Settings" },
                     { src: "/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png", alt: "Account Profile Screen" },
                     { src: "/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png", alt: "Settings Screen" }
                   ]}
