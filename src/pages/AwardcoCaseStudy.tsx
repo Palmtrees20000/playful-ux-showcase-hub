@@ -151,7 +151,7 @@ const AwardcoCaseStudy = () => {
 
           <LightboxGallery
             images={processImages.map((img, idx) => ({ src: img, alt: `Design process ${idx + 1}` }))}
-            columns="grid-cols-1 md:grid-cols-2"
+            columns="grid-cols-2 md:grid-cols-4"
           />
         </motion.section>
 
