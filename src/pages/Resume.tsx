@@ -40,7 +40,12 @@ const Resume = () => {
               size="lg"
               className="bg-gradient-to-r from-teal-600 to-purple-600 hover:from-teal-700 hover:to-purple-700 text-white px-8"
             >
-              <a href="/resume/palmer-resume.pdf" download>
+              <a 
+                href="/resume/palmer-resume.pdf" 
+                download="Palmer_Charles_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download PDF
               </a>
@@ -92,7 +97,12 @@ const Resume = () => {
               size="lg"
               className="border-purple-300 text-purple-700 hover:bg-purple-50"
             >
-              <a href="/resume/palmer-resume.pdf" download>
+              <a 
+                href="/resume/palmer-resume.pdf" 
+                download="Palmer_Charles_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download PDF
               </a>
