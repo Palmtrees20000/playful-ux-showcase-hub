@@ -107,6 +107,11 @@ const AboutSection = () => {
                 later, I revisited UX and realized it was the perfect mix of creativity, strategy, 
                 and problem-solving.
               </p>
+              <p>
+                What I love most about UX is the process of iterating, brainstorming, and exploring 
+                new design solutions. Each challenge pushes me to think critically and creatively — 
+                whether I&apos;m sketching wireframes, testing prototypes, or reworking a layout based on feedback.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -141,13 +146,42 @@ const AboutSection = () => {
           ))}
         </div>
 
+        {/* Skills */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <h3 className="text-2xl font-bold mb-8 text-gray-900">Skills & Tools</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.05 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <Badge 
+                  className="px-4 py-2 text-sm bg-gradient-to-r from-teal-50 to-purple-50 text-purple-700 border-purple-200 hover:from-teal-100 hover:to-purple-100 transition-all"
+                >
+                  {skill}
+                </Badge>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Resume CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16 py-12 border-y border-gray-200"
+          className="text-center mt-20 pt-12 border-t border-gray-200"
         >
           <h3 className="text-2xl font-bold mb-4 text-gray-900">
             Want to see my full resume?
@@ -182,50 +216,6 @@ const AboutSection = () => {
                 Download PDF
               </a>
             </Button>
-          </div>
-        </motion.div>
-
-        {/* Continuation of about text */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="max-w-3xl mx-auto mb-16"
-        >
-          <p className="text-gray-600 leading-relaxed text-lg">
-            What I love most about UX is the process of iterating, brainstorming, and exploring 
-            new design solutions. Each challenge pushes me to think critically and creatively — 
-            whether I&apos;m sketching wireframes, testing prototypes, or reworking a layout based on feedback.
-          </p>
-        </motion.div>
-
-        {/* Skills */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <h3 className="text-2xl font-bold mb-8 text-gray-900">Skills & Tools</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, index) => (
-              <motion.div
-                key={skill}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.05 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <Badge 
-                  className="px-4 py-2 text-sm bg-gradient-to-r from-teal-50 to-purple-50 text-purple-700 border-purple-200 hover:from-teal-100 hover:to-purple-100 transition-all"
-                >
-                  {skill}
-                </Badge>
-              </motion.div>
-            ))}
           </div>
         </motion.div>
       </div>
