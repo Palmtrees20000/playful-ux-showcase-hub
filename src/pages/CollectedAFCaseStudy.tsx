@@ -107,7 +107,7 @@ const CollectedAFCaseStudy = () => {
                 <li><strong>Admin dashboard</strong></li>
               </ul>
               
-              <div className="max-w-sm mx-auto mb-8">
+              <div className="max-w-xs mx-auto mb-8">
                 <SingleImageLightbox 
                   src="/lovable-uploads/collectedaf-existing-page.png" 
                   alt="CollectedAF existing page interface" 
@@ -157,7 +157,7 @@ const CollectedAFCaseStudy = () => {
                     { src: "/lovable-uploads/collectaf-sketch-2.jpg", alt: "CollectedAF admin dashboard sketches" },
                     { src: "/lovable-uploads/collectaf-admin-ui.png", alt: "CollectedAF admin interface design" }
                   ]}
-                  columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                  columns="grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
                 />
               </div>
             </CardContent>
@@ -204,7 +204,7 @@ const CollectedAFCaseStudy = () => {
                     { src: "/lovable-uploads/collectaf-wireframe-1.png", alt: "CollectedAF admin wireframe - collected data view" },
                     { src: "/lovable-uploads/collectaf-wireframe-2.png", alt: "CollectedAF admin wireframe - category management" }
                   ]}
-                  columns="grid-cols-1 md:grid-cols-2"
+                  columns="grid-cols-2 md:grid-cols-3"
                 />
               </div>
 
@@ -228,7 +228,7 @@ const CollectedAFCaseStudy = () => {
                 <p className="text-gray-600 mb-6">
                   The completed admin dashboard interface showing the submission management system with categories, filtering, and action controls.
                 </p>
-                <div className="max-w-sm mx-auto">
+                <div className="max-w-xs mx-auto">
                   <SingleImageLightbox 
                     src="/lovable-uploads/collectedaf-admin-page-final.png" 
                     alt="CollectedAF final admin dashboard design" 
