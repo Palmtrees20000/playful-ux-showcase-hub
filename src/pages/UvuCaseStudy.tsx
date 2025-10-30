@@ -96,11 +96,11 @@ const UvuCaseStudy = () => {
           <h2 className="text-3xl font-bold mb-6">🎯 The Problem</h2>
           <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200">
             <CardContent className="p-8">
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Difficult navigation and broken links</li>
-                <li>Information overload making program selection confusing</li>
-                <li>Career and internship info hard to find</li>
-              </ul>
+            <ul className="list-disc list-inside space-y-2 text-gray-600">
+              <li><strong>Difficult navigation</strong> and broken links</li>
+              <li><strong>Information overload</strong> making program selection confusing</li>
+              <li><strong>Career and internship info</strong> hard to find</li>
+            </ul>
             </CardContent>
           </Card>
         </motion.section>
@@ -130,10 +130,10 @@ const UvuCaseStudy = () => {
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-4">Key Insights</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Students need clear paths to advisors and department info</li>
-                <li>Career info and salaries are crucial decision factors</li>
-                <li>Inconsistent navigation across pages causes confusion</li>
-                <li>Duplicate information creates information overload</li>
+                <li>Students need <strong>clear paths to advisors</strong> and department info</li>
+                <li><strong>Career info and salaries</strong> are crucial decision factors</li>
+                <li><strong>Inconsistent navigation</strong> across pages causes confusion</li>
+                <li><strong>Duplicate information</strong> creates information overload</li>
               </ul>
             </CardContent>
           </Card>
@@ -157,9 +157,9 @@ const UvuCaseStudy = () => {
 
               <h3 className="text-xl font-semibold mb-4">Key Takeaways</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Users were confused about navigation, especially returning to the CET homepage</li>
-                <li>Career and internship information was not immediately visible, requiring users to search under "Student Resources"</li>
-                <li>The banner was attention-grabbing but did not clearly communicate that the site was for CET specifically</li>
+                <li>Users were <strong>confused about navigation</strong>, especially returning to the CET homepage</li>
+                <li><strong>Career and internship information</strong> was not immediately visible, requiring users to search under "Student Resources"</li>
+                <li>The banner was <strong>attention-grabbing</strong> but did not clearly communicate that the site was for CET specifically</li>
               </ul>
             </CardContent>
           </Card>
@@ -182,19 +182,19 @@ const UvuCaseStudy = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Qualities</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Applicable photos</li>
-                    <li>Clear call to actions</li>
-                    <li>Consistent buttons across pages</li>
+                    <li><strong>Applicable photos</strong></li>
+                    <li><strong>Clear call to actions</strong></li>
+                    <li><strong>Consistent buttons</strong> across pages</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Constraints</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Don't have access to change all the pages on the website</li>
-                    <li>Can't change the navigation bar even though it's not consistent across every page</li>
-                    <li>Creating changes within the existing UVU design system</li>
-                    <li>Timing is a constraint; must finish before the semester ends</li>
-                    <li>$0 budget</li>
+                    <li>Don't have access to change <strong>all the pages</strong> on the website</li>
+                    <li>Can't change the <strong>navigation bar</strong> even though it's not consistent across every page</li>
+                    <li>Creating changes within the <strong>existing UVU design system</strong></li>
+                    <li><strong>Timing is a constraint</strong>; must finish before the semester ends</li>
+                    <li><strong>$0 budget</strong></li>
                   </ul>
                 </div>
               </div>

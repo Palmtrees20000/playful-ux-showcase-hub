@@ -133,9 +133,9 @@ const AwardcoCaseStudy = () => {
               As someone newer to UX at the time, I faced a steep learning curve — but I approached it with curiosity and commitment. Due to a signed NDA, I'm only able to show limited project details or visuals, but I'll walk through my role and process. Despite limited access to the existing Awardco UI, I focused on:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
-              <li>Listing key features users might need or expect</li>
-              <li>Sketching initial ideas and layout possibilities</li>
-              <li>Iterating quickly into low-fidelity wireframes using Figma</li>
+              <li><strong>Listing key features</strong> users might need or expect</li>
+              <li><strong>Sketching initial ideas</strong> and layout possibilities</li>
+              <li><strong>Iterating quickly</strong> into low-fidelity wireframes using Figma</li>
             </ul>
             <p className="text-gray-600 mb-6">
               This approach helped me translate abstract ideas into actionable design elements, even under uncertainty.
@@ -163,9 +163,9 @@ const AwardcoCaseStudy = () => {
                 Working with a more experienced team challenged me in the best ways. I had to quickly adapt to:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
-                <li>UX-specific terminology and workflows</li>
-                <li>Fast-paced brainstorming sessions</li>
-                <li>Stakeholder expectations</li>
+                <li><strong>UX-specific terminology</strong> and workflows</li>
+                <li><strong>Fast-paced brainstorming</strong> sessions</li>
+                <li><strong>Stakeholder expectations</strong></li>
               </ul>
               <p className="text-lg leading-relaxed text-gray-700">
                 There were moments of doubt, especially when feedback was tough or my ideas didn't land. But I learned to ask better questions, embrace critique, and refine my communication. One pivotal moment came when I had to defend my design direction and explain how it addressed user needs — this pushed me to think more strategically.
@@ -307,9 +307,9 @@ const AwardcoCaseStudy = () => {
                 This sprint taught me the importance of:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
-                <li>Clear communication in a team setting</li>
-                <li>Designing under real-world constraints</li>
-                <li>Listening deeply to both users and teammates</li>
+                <li><strong>Clear communication</strong> in a team setting</li>
+                <li><strong>Designing under real-world constraints</strong></li>
+                <li><strong>Listening deeply</strong> to both users and teammates</li>
               </ul>
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Though the experience was intense, it gave me confidence in my ability to contribute to UX projects under pressure and collaborate meaningfully — even when I felt out of my depth.

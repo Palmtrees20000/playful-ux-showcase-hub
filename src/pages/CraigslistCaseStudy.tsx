@@ -75,9 +75,9 @@ const CraigslistCaseStudy = () => {
                 
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Problems to Solve:</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
-                  <li>A dated and unorganized user interface</li>
-                  <li>Difficult navigation for users trying to browse or post listings</li>
-                  <li>A lack of visual clarity for actions like searching, filtering, and browsing</li>
+                  <li>A <strong>dated and unorganized</strong> user interface</li>
+                  <li><strong>Difficult navigation</strong> for users trying to browse or post listings</li>
+                  <li>A lack of <strong>visual clarity</strong> for actions like searching, filtering, and browsing</li>
                 </ul>
                 
                 <p className="text-lg text-gray-600">
@@ -274,10 +274,10 @@ const CraigslistCaseStudy = () => {
                 <div className="bg-purple-50 rounded-lg p-6">
                   <h3 className="font-semibold text-gray-800 mb-4">Key Learnings</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    <li>How to balance modern design trends with familiar user patterns</li>
-                    <li>The importance of visual hierarchy in information-dense interfaces</li>
-                    <li>Creating cohesive design systems within tight timelines</li>
-                    <li>Designing for community-focused platforms and marketplace dynamics</li>
+                    <li>How to balance <strong>modern design trends</strong> with familiar user patterns</li>
+                    <li>The importance of <strong>visual hierarchy</strong> in information-dense interfaces</li>
+                    <li>Creating <strong>cohesive design systems</strong> within tight timelines</li>
+                    <li>Designing for <strong>community-focused platforms</strong> and marketplace dynamics</li>
                   </ul>
                 </div>
               </CardContent>
