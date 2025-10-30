@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { LightboxGallery, SingleImageLightbox } from "@/components/LightboxGallery";
 
 const MemoryMattersCaseStudy = () => {
   const [sketchGalleryOpen, setSketchGalleryOpen] = useState(false);
@@ -222,24 +223,10 @@ const MemoryMattersCaseStudy = () => {
                 by creating a navigation map and improving content hierarchy.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                {sketchImages.map((image, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <img 
-                      src={image} 
-                      alt={`Sketch ${index + 1}`}
-                      className="portfolio-image portfolio-image-hover portfolio-image-wide"
-                      onClick={() => openSketchGallery(index)}
-                    />
-                  </motion.div>
-                ))}
-              </div>
+              <LightboxGallery
+                images={sketchImages.map((img, idx) => ({ src: img, alt: `Sketch ${idx + 1}` }))}
+                columns="grid-cols-1 md:grid-cols-2"
+              />
 
               <h3 className="text-xl font-semibold mb-4">Key Design Decisions:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -252,24 +239,10 @@ const MemoryMattersCaseStudy = () => {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {designImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <img 
-                  src={image} 
-                  alt={`Design ${index + 1}`}
-                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                  onClick={() => openDesignGallery(index)}
-                />
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={designImages.map((img, idx) => ({ src: img, alt: `Design ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          />
         </motion.section>
 
         {/* The Challenges */}
@@ -345,24 +318,10 @@ const MemoryMattersCaseStudy = () => {
         >
           <h2 className="text-3xl font-bold mb-6">🎨 Final Designs</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {finalDesigns.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <img 
-                  src={image} 
-                  alt={`Final design ${index + 1}`}
-                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                  onClick={() => openFinalGallery(index)}
-                />
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={finalDesigns.map((img, idx) => ({ src: img, alt: `Final design ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
         </motion.section>
 
         {/* Conclusion */}

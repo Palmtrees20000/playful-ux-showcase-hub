@@ -15,6 +15,43 @@ interface LightboxGalleryProps {
   imageClassName?: string;
 }
 
+// Single image lightbox component
+export const SingleImageLightbox = ({ src, alt, className = "" }: { src: string; alt: string; className?: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <img
+        src={src}
+        alt={alt}
+        className={`portfolio-image portfolio-image-hover ${className}`}
+        onClick={() => setIsOpen(true)}
+      />
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent 
+          className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-0"
+        >
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute top-4 right-4 z-50 text-white hover:bg-white/20"
+              onClick={() => setIsOpen(false)}
+            >
+              <X className="w-6 h-6" />
+            </Button>
+            <img
+              src={src}
+              alt={alt}
+              className="max-w-full max-h-[85vh] object-contain"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+};
+
 export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-2 lg:grid-cols-4", imageClassName = "" }: LightboxGalleryProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 

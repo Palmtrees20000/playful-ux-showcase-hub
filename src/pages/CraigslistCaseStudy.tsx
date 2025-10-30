@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { LightboxGallery } from "@/components/LightboxGallery";
 
 const CraigslistCaseStudy = () => {
   const navigate = useNavigate();
@@ -107,31 +108,14 @@ const CraigslistCaseStudy = () => {
             <Card className="border-purple-200 shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Early Ideation</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-4">Initial Sketches</h3>
-                    <img 
-                      src="/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png" 
-                      alt="Initial sketches and ideas" 
-                      className="portfolio-image portfolio-image-standard"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-4">Mood Board & Current State</h3>
-                    <div className="grid grid-cols-1 gap-6">
-                      <img 
-                        src="/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png" 
-                        alt="Mood board 1 - Current Craigslist mobile app screenshots" 
-                        className="portfolio-image portfolio-image-standard"
-                      />
-                      <img 
-                        src="/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png" 
-                        alt="Mood board 2 - Current Craigslist mobile app screenshots" 
-                        className="portfolio-image portfolio-image-standard"
-                      />
-                    </div>
-                  </div>
-                </div>
+                <LightboxGallery
+                  images={[
+                    { src: "/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png", alt: "Initial sketches and ideas" },
+                    { src: "/lovable-uploads/5c20ecea-5141-4c47-91c0-fae3b6fefa33.png", alt: "Mood board 1 - Current Craigslist mobile app screenshots" },
+                    { src: "/lovable-uploads/d201658d-e335-419a-8a73-38e197f3b3c5.png", alt: "Mood board 2 - Current Craigslist mobile app screenshots" }
+                  ]}
+                  columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                />
                 <p className="text-gray-600">
                   The initial ideation phase involved sketching out layout concepts and gathering visual inspiration. 
                   The mood board helped establish the visual direction while analyzing the current mobile interface 
@@ -219,59 +203,21 @@ const CraigslistCaseStudy = () => {
                   The redesigned Craigslist mobile app features a modern purple color scheme, improved visual hierarchy, and streamlined navigation that makes browsing and posting listings more intuitive.
                 </p>
                 
-                {/* High-fidelity screens grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
-                  <img 
-                    src="/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png" 
-                    alt="Home Screen - For Sale Near You" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png" 
-                    alt="Search Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png" 
-                    alt="Search Results - Car Parts" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png" 
-                    alt="Create a Post" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png" 
-                    alt="Messages Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png" 
-                    alt="Notifications Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png" 
-                    alt="Favorites Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/0834fe85-1559-4034-b19b-9e005735f2e7.png" 
-                    alt="Profile Settings" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png" 
-                    alt="Account Profile Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                  <img 
-                    src="/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png" 
-                    alt="Settings Screen" 
-                    className="portfolio-image portfolio-image-standard"
-                  />
-                </div>
+                <LightboxGallery
+                  images={[
+                    { src: "/lovable-uploads/dabe03ef-bfda-4b80-b62e-e1fcbbf67764.png", alt: "Home Screen - For Sale Near You" },
+                    { src: "/lovable-uploads/13f87a82-f069-4be1-8d16-50ab007453a6.png", alt: "Search Screen" },
+                    { src: "/lovable-uploads/15813092-8e77-4575-99ce-8c1db4c7b015.png", alt: "Search Results - Car Parts" },
+                    { src: "/lovable-uploads/8a0f1c40-b697-4a8e-a0f8-dc09c730481c.png", alt: "Create a Post" },
+                    { src: "/lovable-uploads/ad815b20-fb18-4e90-ab41-65912516f70a.png", alt: "Messages Screen" },
+                    { src: "/lovable-uploads/dabb9f3a-dce4-4f7f-b4e7-79996b76e116.png", alt: "Notifications Screen" },
+                    { src: "/lovable-uploads/a6393250-bfb0-4374-a762-40efa07e442e.png", alt: "Favorites Screen" },
+                    { src: "/lovable-uploads/0834fe85-1559-4034-b19b-9e005735f2e7.png", alt: "Profile Settings" },
+                    { src: "/lovable-uploads/e5237505-8d9b-4676-93d2-0b8252bac3c7.png", alt: "Account Profile Screen" },
+                    { src: "/lovable-uploads/349b49af-8d5c-4c3d-8860-5582d3df7510.png", alt: "Settings Screen" }
+                  ]}
+                  columns="grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                />
               </CardContent>
             </Card>
           </motion.div>

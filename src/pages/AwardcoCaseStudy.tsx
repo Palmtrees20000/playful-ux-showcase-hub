@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { LightboxGallery } from "@/components/LightboxGallery";
 
 const AwardcoCaseStudy = () => {
   const processImages = [
@@ -148,23 +149,10 @@ const AwardcoCaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {processImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <img 
-                  src={image} 
-                  alt={`Design process ${index + 1}`}
-                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                />
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={processImages.map((img, idx) => ({ src: img, alt: `Design process ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
         </motion.section>
 
         {/* Team Collaboration & Growth */}
@@ -231,23 +219,10 @@ const AwardcoCaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {finalDesigns.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <img 
-                  src={image} 
-                  alt={`Final design ${index + 1}`}
-                  className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                />
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={finalDesigns.map((img, idx) => ({ src: img, alt: `Final design ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
         </motion.section>
 
         {/* Key Features */}

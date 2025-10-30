@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
+import { LightboxGallery, SingleImageLightbox } from "@/components/LightboxGallery";
 
 const UvuCaseStudy = () => {
   const personaImages = [
@@ -127,36 +128,10 @@ const UvuCaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {personaImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img 
-                      src={image} 
-                      alt={`Persona ${index + 1}`}
-                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Persona ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={personaImages.map((img, idx) => ({ src: img, alt: `Persona ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
 
           <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
             <CardContent className="p-8">
@@ -272,36 +247,10 @@ const UvuCaseStudy = () => {
           <h2 className="text-3xl font-bold mb-6">📐 Wireframing</h2>
           
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {wireframeImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img 
-                      src={image} 
-                      alt={`Wireframe ${index + 1}`}
-                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Wireframe ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={wireframeImages.map((img, idx) => ({ src: img, alt: `Wireframe ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
         </motion.section>
 
         {/* Surface Comps */}
@@ -333,36 +282,10 @@ const UvuCaseStudy = () => {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {surfaceCompImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Dialog>
-                  <DialogTrigger asChild>
-                    <img 
-                      src={image} 
-                      alt={`Surface comp ${index + 1}`}
-                      className="portfolio-image portfolio-image-hover portfolio-image-standard"
-                    />
-                  </DialogTrigger>
-                  <DialogContent className="max-w-[95vw] max-h-[95vh] p-4 overflow-hidden">
-                    <div className="relative flex items-center justify-center">
-                      <img 
-                        src={image} 
-                        alt={`Surface comp ${index + 1}`}
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </div>
-                  </DialogContent>
-                </Dialog>
-              </motion.div>
-            ))}
-          </div>
+          <LightboxGallery
+            images={surfaceCompImages.map((img, idx) => ({ src: img, alt: `Surface comp ${idx + 1}` }))}
+            columns="grid-cols-1 md:grid-cols-2"
+          />
         </motion.section>
 
         {/* The Challenges */}
