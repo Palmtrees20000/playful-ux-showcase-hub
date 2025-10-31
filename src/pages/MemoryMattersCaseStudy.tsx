@@ -156,9 +156,8 @@ const MemoryMattersCaseStudy = () => {
           <Card className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                Users visiting the site struggled to find the information they needed due to <strong>poor layout structure</strong>, 
-                <strong>unclear labeling</strong>, and <strong>missing or redundant pages</strong>. The absence of a 
-                <strong> search function</strong> and <strong>clear calls to action</strong> made it difficult for potential 
+                Users visiting the site struggled to find the information they needed due to <strong>poor layout structure, unclear labeling</strong>, and <strong>missing or redundant pages</strong>. The absence of a 
+                <strong>search function</strong> and <strong>clear calls to action</strong> made it difficult for potential 
                 volunteers or families to connect with the organization.
               </p>
               
