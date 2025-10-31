@@ -109,7 +109,7 @@ const AboutSection = () => {
               </p>
               <p>
                 What I love most about UX is the process of iterating, brainstorming, and exploring 
-                new design solutions. Each challenge pushes me to think critically and creatively — 
+                new design solutions. Each challenge pushes me to think critically and creatively, 
                 whether I&apos;m sketching wireframes, testing prototypes, or reworking a layout based on feedback.
               </p>
             </div>
