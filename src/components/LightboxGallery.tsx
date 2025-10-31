@@ -120,7 +120,7 @@ export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-2 
                 <img
                   src={images[selectedIndex].src}
                   alt={images[selectedIndex].alt}
-                  className="max-w-full max-h-[85vh] object-contain"
+                  className={`max-w-full max-h-[85vh] object-contain ${images[selectedIndex].className || ""}`}
                 />
 
                 {selectedIndex < images.length - 1 && (
