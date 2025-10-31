@@ -76,9 +76,9 @@ export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-2 
 
   return (
     <>
-      <div className={`grid ${columns} gap-6 p-2`}>
+      <div className={`grid ${columns} gap-8 p-4`}>
         {images.map((image, index) => (
-          <div key={index} className="flex items-center justify-center p-2">
+          <div key={index} className="flex items-center justify-center p-4">
             <img
               src={image.src}
               alt={image.alt}
