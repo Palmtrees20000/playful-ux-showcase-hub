@@ -116,7 +116,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Hi, I&apos;m <span className="font-bold">Palmer</span> — I transform real-world insights into intuitive digital solutions.
+            Hi, I&apos;m <span className="font-bold">Palmer</span>, I transform real-world insights into intuitive digital solutions.
           </motion.h1>
           
           <motion.div
