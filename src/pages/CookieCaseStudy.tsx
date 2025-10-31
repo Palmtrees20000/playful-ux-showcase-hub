@@ -225,37 +225,25 @@ const CookieCaseStudy = () => {
               </div>
 
               <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <LightboxGallery
-                  images={[
-                    {
-                      src: "/lovable-uploads/cookie-sketch-1.jpg",
-                      alt: "Cookie recipe sketch 1",
-                      className: "rotate-90"
-                    }
-                  ]}
-                  columns="grid-cols-1"
-                />
-                <LightboxGallery
-                  images={[
-                    {
-                      src: "/lovable-uploads/cookie-sketch-2.jpg",
-                      alt: "Cookie recipe sketch 2",
-                      className: "rotate-90"
-                    }
-                  ]}
-                  columns="grid-cols-1"
-                />
-                <LightboxGallery
-                  images={[
-                    {
-                      src: "/lovable-uploads/cookie-sketch-3.jpg",
-                      alt: "Cookie recipe rough sketches and ideas"
-                    }
-                  ]}
-                  columns="grid-cols-1"
-                />
-              </div>
+              <LightboxGallery
+                images={[
+                  {
+                    src: "/lovable-uploads/cookie-sketch-1.jpg",
+                    alt: "Cookie recipe sketch 1",
+                    className: "rotate-90"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-2.jpg",
+                    alt: "Cookie recipe sketch 2",
+                    className: "rotate-90"
+                  },
+                  {
+                    src: "/lovable-uploads/cookie-sketch-3.jpg",
+                    alt: "Cookie recipe rough sketches and ideas"
+                  }
+                ]}
+                columns="grid-cols-1 md:grid-cols-3"
+              />
 
               <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
               <LightboxGallery
