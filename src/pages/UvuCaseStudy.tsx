@@ -190,10 +190,10 @@ const UvuCaseStudy = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Constraints</h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Don't have access to change <strong>all the pages</strong> on the website</li>
+                    <li>Did not have access to change <strong>all the pages</strong> on the website</li>
                     <li>Can't change the <strong>navigation bar</strong> even though it's not consistent across every page</li>
                     <li>Creating changes within the <strong>existing UVU design system</strong></li>
-                    <li><strong>Timing is a constraint</strong>; must finish before the semester ends</li>
+                    <li><strong>Timing is a constraint</strong>; needed to finish before the semester ended</li>
                     <li><strong>$0 budget</strong></li>
                   </ul>
                 </div>
