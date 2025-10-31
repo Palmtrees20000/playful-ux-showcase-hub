@@ -165,11 +165,11 @@ const CookieCaseStudy = () => {
 
               <div className="space-y-4">
                 <div className="bg-white/50 p-4 rounded-lg">
-                  <p className="font-semibold text-gray-800 mb-2">Mother's Feedback:</p>
+                  <p className="font-semibold text-gray-800 mb-2">User 1:</p>
                   <p className="text-gray-700">Found the "Print Recipe" button confusing because ads mimicked it; appreciated ad placement on the side but disliked their abundance.</p>
                 </div>
                 <div className="bg-white/50 p-4 rounded-lg">
-                  <p className="font-semibold text-gray-800 mb-2">Father's Feedback:</p>
+                  <p className="font-semibold text-gray-800 mb-2">User 2:</p>
                   <p className="text-gray-700">Immediately removed ads that blocked content; disliked large blank gaps that required extra scrolling; enjoyed the color palette but wanted better spacing.</p>
                 </div>
               </div>
