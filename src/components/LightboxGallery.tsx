@@ -21,12 +21,14 @@ export const SingleImageLightbox = ({ src, alt, className = "" }: { src: string;
 
   return (
     <>
-      <img
-        src={src}
-        alt={alt}
-        className={`portfolio-image portfolio-image-hover ${className}`}
-        onClick={() => setIsOpen(true)}
-      />
+      <div className="flex items-center justify-center p-2">
+        <img
+          src={src}
+          alt={alt}
+          className={`portfolio-image portfolio-image-hover w-full h-auto ${className}`}
+          onClick={() => setIsOpen(true)}
+        />
+      </div>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent 
           className="max-w-[95vw] max-h-[95vh] p-0 bg-black/95 border-0"
@@ -74,15 +76,16 @@ export const LightboxGallery = ({ images, columns = "grid-cols-1 md:grid-cols-2 
 
   return (
     <>
-      <div className={`grid ${columns} gap-6`}>
+      <div className={`grid ${columns} gap-6 p-2`}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            className={`portfolio-image portfolio-image-hover portfolio-image-standard ${imageClassName} ${image.className || ""}`}
-            onClick={() => setSelectedIndex(index)}
-          />
+          <div key={index} className="flex items-center justify-center p-2">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className={`portfolio-image portfolio-image-hover portfolio-image-standard w-full h-auto ${imageClassName} ${image.className || ""}`}
+              onClick={() => setSelectedIndex(index)}
+            />
+          </div>
         ))}
       </div>
 
