@@ -212,8 +212,7 @@ const MemoryMattersCaseStudy = () => {
           <Card className="mb-8 bg-gradient-to-br from-indigo-50 to-blue-50 border-indigo-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                To start, I <strong>sketched out potential redesigns</strong> and focused on <strong>simplifying the navigation</strong> 
-                by creating a navigation map and improving content hierarchy.
+                To start, I <strong>sketched out potential redesigns</strong> and focused on <strong>simplifying the navigation by creating a navigation map and improving content hierarchy.</strong>
               </p>
 
               <LightboxGallery
