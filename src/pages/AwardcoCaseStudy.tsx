@@ -58,7 +58,7 @@ const AwardcoCaseStudy = () => {
           </p>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            A 6-week UX sprint redesigning employee recognition workflows to increase engagement and streamline award processes for a workforce of 10,000+ employees.
+            A 6-week UX sprint redesigning employee recognition workflows to increase engagement.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -312,10 +312,10 @@ const AwardcoCaseStudy = () => {
                 <li><strong>Listening deeply</strong> to both users and teammates</li>
               </ul>
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Though the experience was intense, it gave me confidence in my ability to contribute to UX projects under pressure and collaborate meaningfully — even when I felt out of my depth.
+                Though the experience was intense, it gave me confidence in my ability to contribute to UX projects under pressure and collaborate meaningfully — even when I felt inadequate.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
-                Working at Awardco helped me grow in professional collaboration and systems thinking. It challenged me to work fast, learn new tools, and adapt quickly. I'd love to do more design system work like this in the future.
+                Working at Awardco helped me grow in professional collaboration. It challenged me to work fast, learn new tools, and adapt quickly. I am looking forward to the next opportunities to learn how I can become a better UX designer.
               </p>
             </CardContent>
           </Card>

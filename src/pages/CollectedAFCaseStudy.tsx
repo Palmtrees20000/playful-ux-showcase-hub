@@ -39,7 +39,7 @@ const CollectedAFCaseStudy = () => {
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            A collaborative UX and development project creating a fully functional website and admin platform for collectors to showcase and manage their collections.
+            A collaborative UX and development project creating a fully functional website and admin platform for CollectedAF employees to showcase and manage their collections.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -107,7 +107,7 @@ const CollectedAFCaseStudy = () => {
                 <li><strong>Admin dashboard</strong></li>
               </ul>
               
-              <div className="max-w-xs mx-auto mb-8">
+              <div className="max-w-[200px] mx-auto mb-8">
                 <SingleImageLightbox 
                   src="/lovable-uploads/collectedaf-existing-page.png" 
                   alt="CollectedAF existing page interface" 
@@ -140,6 +140,7 @@ const CollectedAFCaseStudy = () => {
                 Though understanding the vision was hard at first, I sketched interface ideas and used <strong>AI tools</strong> to explore different structure options that balanced <strong>visual hierarchy</strong> and <strong>usability</strong>.
               </p>
               <div className="bg-white/50 p-4 rounded-lg border border-blue-200 mt-6">
+                <p className="text-gray-700 font-semibold mb-2">AI Prompts Used for Design Exploration:</p>
                 <p className="text-gray-600 italic">
                   "What is a good category admin site that categorizes accepting and denying. This is for the CollectedAF project I am working on"
                 </p>

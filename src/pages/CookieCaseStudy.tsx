@@ -35,7 +35,7 @@ const CookieCaseStudy = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
-            The Best Chocolate Chip Cookie Recipe Ever Redesign
+            The Best Chocolate Chip Cookie Recipe Ever Website Redesign
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -79,7 +79,7 @@ const CookieCaseStudy = () => {
           <Card>
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                The goal of this project was to analyze a <strong>disorganized recipe website</strong> and identify pain points that prevented users from easily accessing and enjoying its content.
+                The goal of this project was to analyze a <strong>disorganized recipe website</strong> and reorganize the ads.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
                 By observing users, gathering direct feedback, and conducting personal evaluations, I began redesigning the layout with a focus on <strong>simplicity</strong>, <strong>accessibility</strong>, and <strong>intuitive navigation</strong>.
@@ -154,7 +154,6 @@ const CookieCaseStudy = () => {
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
                 <li><strong>Drive ad engagement</strong> and impressions</li>
-                <li>Encourage <strong>affiliate link clicks</strong> (mainly Amazon product links)</li>
                 <li>Grow <strong>social media followers</strong> and newsletter subscribers</li>
                 <li>Improve <strong>SEO rankings</strong> by increasing shares, time on page, and content engagement</li>
               </ul>
@@ -226,25 +225,37 @@ const CookieCaseStudy = () => {
               </div>
 
               <h3 className="font-semibold text-lg mb-4">Sketches:</h3>
-              <LightboxGallery
-                images={[
-                  {
-                    src: "/lovable-uploads/cookie-sketch-1.jpg",
-                    alt: "Cookie recipe sketch 1",
-                    className: "rotate-90"
-                  },
-                  {
-                    src: "/lovable-uploads/cookie-sketch-2.jpg",
-                    alt: "Cookie recipe sketch 2",
-                    className: "rotate-90"
-                  },
-                  {
-                    src: "/lovable-uploads/cookie-sketch-3.jpg",
-                    alt: "Cookie recipe rough sketches and ideas"
-                  }
-                ]}
-                columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-              />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <LightboxGallery
+                  images={[
+                    {
+                      src: "/lovable-uploads/cookie-sketch-1.jpg",
+                      alt: "Cookie recipe sketch 1",
+                      className: "rotate-90"
+                    }
+                  ]}
+                  columns="grid-cols-1"
+                />
+                <LightboxGallery
+                  images={[
+                    {
+                      src: "/lovable-uploads/cookie-sketch-2.jpg",
+                      alt: "Cookie recipe sketch 2",
+                      className: "rotate-90"
+                    }
+                  ]}
+                  columns="grid-cols-1"
+                />
+                <LightboxGallery
+                  images={[
+                    {
+                      src: "/lovable-uploads/cookie-sketch-3.jpg",
+                      alt: "Cookie recipe rough sketches and ideas"
+                    }
+                  ]}
+                  columns="grid-cols-1"
+                />
+              </div>
 
               <h3 className="font-semibold text-lg mb-4 mt-8">Wireframes:</h3>
               <LightboxGallery

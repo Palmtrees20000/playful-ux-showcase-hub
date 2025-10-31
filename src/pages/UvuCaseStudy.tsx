@@ -53,11 +53,11 @@ const UvuCaseStudy = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-purple-600 bg-clip-text text-transparent">
-            UVU College of Engineering & Technology Redesign
+            UVU College of Engineering & Technology (CET) Redesign
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Redesigning UVU's College of Engineering website to improve navigation and usability for students.
+            Redesigning UVU's College of Engineering & Technology (CET) website to improve navigation and usability for students.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -281,25 +281,6 @@ const UvuCaseStudy = () => {
           />
         </motion.section>
 
-        {/* The Challenges */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-6">⚠️ The Challenges</h2>
-          <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
-            <CardContent className="p-8">
-              <p className="text-lg leading-relaxed text-gray-700">
-                Key challenge: maintaining team motivation without hard deadlines. Learned the importance of clear expectations, 
-                asking better research questions, and understanding the full project scope beyond my individual tasks.
-              </p>
-            </CardContent>
-          </Card>
-        </motion.section>
-
         {/* Testing & Validating */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -320,6 +301,25 @@ const UvuCaseStudy = () => {
               
               <p className="text-gray-700">
                 <strong>Solution:</strong> Moved Departments section higher, changed "Make a gift" to "Donate" for clarity.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.section>
+
+        {/* The Challenges */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold mb-6">⚠️ The Challenges</h2>
+          <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
+            <CardContent className="p-8">
+              <p className="text-lg leading-relaxed text-gray-700">
+                Key challenge: maintaining team motivation without hard deadlines. Learned the importance of clear expectations, 
+                asking better research questions, and understanding the full project scope beyond my individual tasks.
               </p>
             </CardContent>
           </Card>

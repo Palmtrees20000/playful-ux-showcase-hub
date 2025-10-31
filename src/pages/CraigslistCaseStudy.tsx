@@ -80,6 +80,10 @@ const CraigslistCaseStudy = () => {
                   <li>A lack of <strong>visual clarity</strong> for actions like searching, filtering, and browsing</li>
                 </ul>
                 
+                <p className="text-lg text-gray-600 mb-6">
+                  I wanted to gather modern inspiration from other buying and selling platforms like KSL, Amazon, and Facebook Marketplace. I borrowed design features such as messaging and notifications from Facebook.
+                </p>
+                
                 <p className="text-lg text-gray-600">
                   The redesign focused on making the app feel more structured, modern, and user-friendly — especially for community buyers and sellers who rely on Craigslist for jobs, goods, and services.
                 </p>
@@ -97,6 +101,12 @@ const CraigslistCaseStudy = () => {
             <Card className="border-purple-200 shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Early Ideation</h2>
+                <p className="text-gray-600 mb-6">
+                  The initial ideation phase involved sketching out layout concepts and gathering visual inspiration. 
+                  The mood board helped establish the visual direction while analyzing the current mobile interface 
+                  revealed opportunities for improved user experience and modern design patterns.
+                </p>
+                
                 <LightboxGallery
                   images={[
                     { src: "/lovable-uploads/879986b9-e875-4834-973d-ad2a828abcda.png", alt: "Initial sketches and ideas" },
@@ -105,11 +115,6 @@ const CraigslistCaseStudy = () => {
                   ]}
                   columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                 />
-                <p className="text-gray-600">
-                  The initial ideation phase involved sketching out layout concepts and gathering visual inspiration. 
-                  The mood board helped establish the visual direction while analyzing the current mobile interface 
-                  revealed opportunities for improved user experience and modern design patterns.
-                </p>
               </CardContent>
             </Card>
           </motion.div>
