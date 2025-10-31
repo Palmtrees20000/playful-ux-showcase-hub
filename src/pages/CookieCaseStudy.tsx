@@ -229,11 +229,13 @@ const CookieCaseStudy = () => {
                 images={[
                   {
                     src: "/lovable-uploads/cookie-sketch-1.jpg",
-                    alt: "Cookie recipe sketch 1"
+                    alt: "Cookie recipe sketch 1",
+                    className: "rotate-90"
                   },
                   {
                     src: "/lovable-uploads/cookie-sketch-2.jpg",
-                    alt: "Cookie recipe sketch 2"
+                    alt: "Cookie recipe sketch 2",
+                    className: "rotate-90"
                   },
                   {
                     src: "/lovable-uploads/cookie-sketch-3.jpg",
