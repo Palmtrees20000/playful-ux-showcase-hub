@@ -250,8 +250,7 @@ const MemoryMattersCaseStudy = () => {
           <Card className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                One of the biggest challenges was <strong>deciding what information to keep, combine, or remove</strong> 
-                while maintaining the organization's core message.
+                One of the biggest challenges was deciding what information to keep, combine, or remove while maintaining the organization's core message.
               </p>
 
               <h3 className="text-xl font-semibold mb-4">Other Challenges:</h3>
