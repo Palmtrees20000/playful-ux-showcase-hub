@@ -4,7 +4,7 @@ import { ExternalLink, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -23,11 +23,13 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const navigate = useNavigate();
+  
   const handleCardClick = () => {
     if (project.link.startsWith('/')) {
-      window.location.href = project.link;
+      navigate(project.link);
     } else {
-      window.open(project.link, '_blank');
+      window.open(project.link, '_blank', 'noopener,noreferrer');
     }
   };
 
