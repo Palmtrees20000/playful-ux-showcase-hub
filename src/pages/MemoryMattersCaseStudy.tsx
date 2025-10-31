@@ -328,8 +328,7 @@ const MemoryMattersCaseStudy = () => {
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-gray-700">
                 I learned that <strong>effective design takes time, patience, and attention to detail</strong>. 
-                Ensuring consistency across all devices required <strong>careful adjustments and problem-solving</strong> 
-                to create a cohesive user experience. Through this project, I developed a deeper understanding of 
+                Ensuring consistency across all devices required <strong>careful adjustments and problem-solving to create a cohesive user experience.</strong> Through this project, I developed a deeper understanding of 
                 <strong> Figma tools</strong> such as components, grids, and icon systems, and gained greater appreciation 
                 for how <strong>structure and creativity work together</strong> in design. Most importantly, this experience 
                 <strong> strengthened my confidence as a designer</strong> and deepened my desire to keep exploring new tools 
