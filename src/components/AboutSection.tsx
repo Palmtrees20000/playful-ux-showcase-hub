@@ -66,7 +66,7 @@ const AboutSection = () => {
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-teal-400 via-purple-500 to-orange-400 p-1">
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/lovable-uploads/6510e755-6be4-4246-856d-ee51bf76aba1.png"
+                    src="/lovable-uploads/palmer-profile.jpg"
                     alt="Palmer Charles"
                     className="w-full h-full object-cover rounded-full"
                   />
